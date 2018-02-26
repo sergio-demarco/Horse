@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Horse
 {
-    public partial class Form1 : Form
+    public partial class MainView : Form
     {
-        public Form1()
+        public MainView()
         {
             InitializeComponent();
+        }
+
+        private void MainView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
