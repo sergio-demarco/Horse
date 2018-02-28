@@ -1,0 +1,28 @@
+----CREATE DATABASE HORSE
+
+--USE [HORSE]
+
+--CREATE TABLE Users (
+--id int not null identity(1,1) primary key,
+--username varchar(25),
+--pass varchar (25),
+--name varchar (30),
+--lastname varchar(30),
+--adress varchar (30),
+--city varchar(30),
+--country varchar (30),
+--phone varchar(30)
+--);
+
+--USE HORSE;  
+--GO  
+--CREATE PROCEDURE LoginToHorse
+--    @username varchar(25),   
+--    @pass varchar(25)   
+--AS
+--SELECT username,pass
+--FROM Users
+--WHERE username = @username and pass=@pass
+--GO
+
+--Insert into Users (username,pass) values('admin','admin');
