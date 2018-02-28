@@ -8,3 +8,13 @@ C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.csproj.GenerateRe
 C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.exe
 C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.pdb
 C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.MainView.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\bin\Debug\Horse.exe.config
+C:\Users\sergio\Desktop\Horse\Horse\Horse\bin\Debug\Horse.exe
+C:\Users\sergio\Desktop\Horse\Horse\Horse\bin\Debug\Horse.pdb
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csprojResolveAssemblyReference.cache
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Login.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.MainView.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Properties.Resources.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.GenerateResource.Cache
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.exe
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.pdb

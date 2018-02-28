@@ -15,15 +15,26 @@ namespace Horse
         public Login()
         {
             InitializeComponent();
+            lblErrorLogin.Visible = false;
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-           
-            MainView miForm1 = new MainView();
-            this.Hide();  // oculta el form inicial 
-            miForm1.ShowDialog(this);  // (muestra el form de tu app)
-            this.Dispose();
+            lblErrorLogin.Visible = false;
+            Class.LoginController myLogin = new Class.LoginController();
+            myLogin.loginToTheSystem(txtUsuario.ToString(), txtContrasena.ToString());
+            if (myLogin.Estado == true)
+            {
+                MainView miForm1 = new MainView();
+                this.Hide();  // oculta el form inicial 
+                miForm1.ShowDialog(this);  // (muestra el form de tu app)
+                this.Dispose();
+            }
+            else
+            {
+                lblErrorLogin.Visible = true;
+            }
+
 
 
 

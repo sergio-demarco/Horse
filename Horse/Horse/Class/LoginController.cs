@@ -7,14 +7,39 @@ using System.Data.SqlClient;
 
 namespace Horse.Class
 {
-    class LoginController
+    class LoginController : Connection
     {
-        private bool estado = true;
+        private bool estado = false;
 
         public bool Estado { get => estado; set => estado = value; }
 
+        Connection myConnection = new Connection();
+
         public Boolean loginToTheSystem(string user, string pass)
         {
+            SqlConnection connection=myConnection.getConnection();
+
+            try
+            {
+
+                    using (var command = new SqlCommand("LoginToHorse", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        command.Connection.Open();
+                        command.Parameters.AddWithValue("@user", user);
+                        command.Parameters.AddWithValue("@pass", pass);
+                        var output = command.ExecuteScalar();
+                        if (output != null) estado = true;
+                    }
+                
+            }
+            catch
+            {
+                estado = false;
+
+            }
+            return estado;
+
             //bool estado = false;
             //try
             //{
@@ -36,7 +61,7 @@ namespace Horse.Class
             //{
             //    estado= false;
             //}
-            return estado;
+
         }
         
     }
