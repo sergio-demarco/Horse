@@ -26,6 +26,8 @@ namespace Horse
             myLogin.loginToTheSystem(txtUsuario.Text, txtContrasena.Text);
             if (myLogin.Estado == true)
             {
+                myLogin.checkIfIsAdmin(txtUsuario.Text, txtContrasena.Text);
+
                 MainView miForm1 = new MainView();
                 this.Hide();  // oculta el form inicial 
                 miForm1.ShowDialog(this);  // (muestra el form de tu app)
@@ -35,18 +37,6 @@ namespace Horse
             {
                 lblErrorLogin.Visible = true;
             }
-
-
-
-
-
-            //Class.LoginController systemLogin = new Class.LoginController();
-            //if (systemLogin.loginToTheSystem(txtUsuario.ToString(), txtContrasena.ToString()))
-            //{
-            //    this.Hide();
-            //    MainView frm = new MainView();
-            //    frm.Show();
-            //}
         }
     }
 }

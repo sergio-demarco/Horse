@@ -9,6 +9,7 @@ namespace Horse.Class
 {
     class LoginController : Connection
     {
+
         private bool estado = false;
 
         public bool Estado { get => estado; set => estado = value; }
@@ -17,18 +18,18 @@ namespace Horse.Class
 
         public Boolean loginToTheSystem(string user, string pass)
         {
-            SqlConnection connection=myConnection.getConnection();
+            SqlConnection connection = myConnection.getConnection();
 
             int count = 0;
             try
             {
 
-                    using (var command = new SqlCommand("LoginToHorse", connection))
-                    {
-                        command.CommandType = System.Data.CommandType.StoredProcedure;
-                        command.Connection.Open();
-                        command.Parameters.AddWithValue("@username", user);
-                        command.Parameters.AddWithValue("@pass", pass);
+                using (var command = new SqlCommand("LoginToHorse", connection))
+                {
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Connection.Open();
+                    command.Parameters.AddWithValue("@username", user);
+                    command.Parameters.AddWithValue("@pass", pass);
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
@@ -38,7 +39,7 @@ namespace Horse.Class
                         if (count > 0) estado = true;
                     }
                 }
-                
+
             }
             catch
             {
@@ -46,30 +47,38 @@ namespace Horse.Class
 
             }
             return estado;
-
-            //bool estado = false;
-            //try
-            //{
-            //    var connectionString = new Connection();
-            //    using (var connection = new SqlConnection(connectionString.tryConnection()))
-            //    {
-            //        using (var command = new SqlCommand("LoginToHorse", connection))
-            //        {
-            //            command.CommandType = System.Data.CommandType.StoredProcedure;
-            //            command.Connection.Open();
-            //            command.Parameters.AddWithValue("@user", user);
-            //            command.Parameters.AddWithValue("@pass", pass);
-            //            var output = command.ExecuteScalar();
-            //            if (output != null) estado= true;                      
-            //        }
-            //    }
-            //}
-            //catch
-            //{
-            //    estado= false;
-            //}
-
         }
-        
+
+        public Boolean checkIfIsAdmin(string user, string pass)
+        {
+            SqlConnection connection = myConnection.getConnection();
+
+            string isAdmin = string.Empty;
+            try
+            {
+
+                using (var command = new SqlCommand("IsAdmin", connection))
+                {
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Connection.Open();
+                    command.Parameters.AddWithValue("@username", user);
+                    command.Parameters.AddWithValue("@pass", pass);
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            isAdmin = reader[0].ToString();
+                        }
+                    }
+                }
+
+            }
+            catch
+            {
+                estado = false;
+
+            }
+            return estado;
+        }
     }
 }
