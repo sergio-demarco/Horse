@@ -12,6 +12,7 @@ namespace Horse
 {
     public partial class Login : Form
     {
+
         public Login()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace Horse
         {
             lblErrorLogin.Visible = false;
             Class.LoginController myLogin = new Class.LoginController();
-            myLogin.loginToTheSystem(txtUsuario.ToString(), txtContrasena.ToString());
+            myLogin.loginToTheSystem(txtUsuario.Text, txtContrasena.Text);
             if (myLogin.Estado == true)
             {
                 MainView miForm1 = new MainView();

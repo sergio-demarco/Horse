@@ -18,7 +18,8 @@ namespace Horse.Class
         public Boolean loginToTheSystem(string user, string pass)
         {
             SqlConnection connection=myConnection.getConnection();
-            int cont = 0;
+
+            int count = 0;
             try
             {
 
@@ -26,14 +27,15 @@ namespace Horse.Class
                     {
                         command.CommandType = System.Data.CommandType.StoredProcedure;
                         command.Connection.Open();
-                        command.Parameters.AddWithValue("@user", user);
+                        command.Parameters.AddWithValue("@username", user);
                         command.Parameters.AddWithValue("@pass", pass);
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            cont++;
+                            count++;
                         }
+                        if (count > 0) estado = true;
                     }
                 }
                 

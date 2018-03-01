@@ -14,18 +14,18 @@ namespace Horse.Class
     {
         public SqlConnection getConnection()
         {
-                try
-                {
-                    SqlConnection Conectar = new SqlConnection(ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ToString());
-                    Conectar.Open();
-                    Conectar.Close();
+            try
+            {
+                SqlConnection Conectar = new SqlConnection(ConfigurationManager.ConnectionStrings["HorseConnection"].ToString());
+                Conectar.Open();
+                Conectar.Close();
 
-                    return Conectar;
-                }
-                catch (Exception ex)
-                {
-                    throw (ex);
-                }
+                return Conectar;
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
         }
     }
 }
