@@ -12,7 +12,7 @@ namespace HorseWeb
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            Session["Login"] = 0;
+           // Session["Login"] = 0;
         }
 
         protected void Session_Start(object sender, EventArgs e)

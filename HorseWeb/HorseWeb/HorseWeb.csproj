@@ -65,6 +65,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap\bootstrap.min.css" />
+    <Content Include="bootstrap\bootstrap.min.js" />
+    <Content Include="bootstrap\font-awesome.min.css" />
+    <Content Include="bootstrap\jquery.min.js" />
+    <Content Include="bootstrap\metisMenu.min.css" />
+    <Content Include="bootstrap\morris-data.js" />
+    <Content Include="bootstrap\morris.css" />
+    <Content Include="bootstrap\morris.min.js" />
+    <Content Include="bootstrap\raphael.min.js" />
+    <Content Include="bootstrap\sb-admin-2.css" />
+    <Content Include="bootstrap\sb-admin-2.js" />
     <Content Include="Global.asax" />
     <Content Include="Index.aspx" />
     <Content Include="packages.config" />
