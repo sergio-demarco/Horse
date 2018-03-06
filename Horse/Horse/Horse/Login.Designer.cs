@@ -34,6 +34,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContrasena = new System.Windows.Forms.Label();
             this.btnEntrar = new System.Windows.Forms.Button();
+            this.lblErrorLogin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -86,11 +87,23 @@
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
+            // lblErrorLogin
+            // 
+            this.lblErrorLogin.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorLogin.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorLogin.Location = new System.Drawing.Point(65, 225);
+            this.lblErrorLogin.Name = "lblErrorLogin";
+            this.lblErrorLogin.Size = new System.Drawing.Size(344, 23);
+            this.lblErrorLogin.TabIndex = 5;
+            this.lblErrorLogin.Text = "*usuario o contraseña invalida, vuelva a intentar.";
+            // 
             // Login
             // 
+            this.AcceptButton = this.btnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 257);
+            this.Controls.Add(this.lblErrorLogin);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.lblContrasena);
             this.Controls.Add(this.lblUsuario);
@@ -112,6 +125,7 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblContrasena;
         private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.Label lblErrorLogin;
     }
 }
 

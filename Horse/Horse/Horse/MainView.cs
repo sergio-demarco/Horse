@@ -21,5 +21,31 @@ namespace Horse
         {
 
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login miLogin = new Login();
+            this.Hide();  // oculta el form inicial 
+            miLogin.ShowDialog(this);  // (muestra el form de tu app)
+            this.Dispose();
+        }
+
+        private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.Passwords pass = new Forms.Passwords();
+            pass.Show();
+        }
+
+        private void miContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.MyPass pass = new Forms.MyPass();
+            pass.Show();
+        }
+
+        private void gestionarPermisosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.Permission myPermission  = new Forms.Permission();
+            myPermission.Show();
+        }
     }
 }

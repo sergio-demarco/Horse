@@ -1,0 +1,72 @@
+----CREATE DATABASE HORSE
+
+--USE [HORSE]
+
+--CREATE TABLE Users (
+--id int not null identity(1,1) primary key,
+--username varchar(25),
+--pass varchar (25),
+--name varchar (30),
+--lastname varchar(30),
+--adress varchar (30),
+--city varchar(30),
+--country varchar (30),
+--phone varchar(30)
+--);
+
+--USE HORSE;  
+--GO  
+--CREATE PROCEDURE LoginToHorse
+--    @username varchar(25),   
+--    @pass varchar(25)   
+--AS
+--SELECT username,pass
+--FROM Users
+--WHERE username = @username and pass=@pass
+--GO
+
+--Insert into Users (username,pass) values('admin','admin');
+
+--USE [HORSE]
+--GO
+--/****** Object:  StoredProcedure [dbo].[LoginToHorse]    Script Date: 01/03/2018 9:13:33 ******/
+--SET ANSI_NULLS ON
+--GO
+--SET QUOTED_IDENTIFIER ON
+--GO
+--ALTER PROCEDURE [dbo].[LoginToHorse]
+--    @username varchar(25),   
+--    @pass varchar(25)   
+--AS
+--SELECT username,pass
+--FROM Users
+--WHERE username = @username and pass=@pass and active=1
+
+
+--ALTER TABLE Users ADD isAdmin bit NULL;
+--update users set isAdmin =0 where username='admin';
+--insert into users (username,pass,active,isAdmin) values ('horse','horse',1,1)
+
+--CREATE PROCEDURE [dbo].[IsAdmin]
+--    @username varchar(25),   
+--    @pass varchar(25)   
+--AS
+--SELECT isAdmin
+--FROM Users
+--WHERE username = @username and pass=@pass
+
+
+--isAdmin=reader[0].ToString(); ====== "True"
+
+
+--USE [HORSE]
+--GO
+--CREATE PROCEDURE [dbo].[ResetPassword]
+--    @username varchar(25),   
+--    @pass varchar(25)   
+--AS
+
+--update Users set pass=@pass where username = @username
+
+
+--select * from users
