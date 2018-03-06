@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Class\Connection.cs" />
     <Compile Include="Class\LoginController.cs" />
+<<<<<<< HEAD:Horse/Horse/Horse/Horse.csproj
     <Compile Include="Class\MenuController.cs" />
     <Compile Include="Forms\DialogOk.cs">
       <SubType>Form</SubType>
@@ -76,6 +77,11 @@
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> a66be670c082cea0a457735432951b185e1d7268:Horse/Horse/Horse.csproj
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
@@ -87,6 +93,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD:Horse/Horse/Horse/Horse.csproj
     <EmbeddedResource Include="Forms\DialogOk.resx">
       <DependentUpon>DialogOk.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +103,8 @@
     <EmbeddedResource Include="Forms\Permissions.resx">
       <DependentUpon>Permissions.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> a66be670c082cea0a457735432951b185e1d7268:Horse/Horse/Horse.csproj
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
