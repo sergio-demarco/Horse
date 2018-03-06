@@ -18,3 +18,6 @@ C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Properties.Resources.r
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.GenerateResource.Cache
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.exe
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.pdb
+C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.Forms.DialogOk.resources
+C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.Forms.MyPass.resources
+C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.Forms.Permission.resources

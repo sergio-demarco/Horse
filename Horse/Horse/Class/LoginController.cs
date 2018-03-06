@@ -11,14 +11,22 @@ namespace Horse.Class
     {
 
         private bool estado = false;
-
+        private string user = string.Empty;
         public bool Estado { get => estado; set => estado = value; }
+        internal Connection MyConnection { get => myConnection; set => myConnection = value; }
+        private Connection myConnection = new Connection();
 
-        Connection myConnection = new Connection();
-
+        public string getUser()
+        {
+            return user;
+        }
+        public void setUser(string username)
+        {
+            this.user = username;
+        }
         public Boolean loginToTheSystem(string user, string pass)
         {
-            SqlConnection connection = myConnection.getConnection();
+            SqlConnection connection = MyConnection.getConnection();
 
             int count = 0;
             try
@@ -51,7 +59,7 @@ namespace Horse.Class
 
         public Boolean checkIfIsAdmin(string user, string pass)
         {
-            SqlConnection connection = myConnection.getConnection();
+            SqlConnection connection = MyConnection.getConnection();
 
             string isAdmin = string.Empty;
             try

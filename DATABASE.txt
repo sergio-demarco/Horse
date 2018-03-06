@@ -57,3 +57,16 @@
 
 
 --isAdmin=reader[0].ToString(); ====== "True"
+
+
+--USE [HORSE]
+--GO
+--CREATE PROCEDURE [dbo].[ResetPassword]
+--    @username varchar(25),   
+--    @pass varchar(25)   
+--AS
+
+--update Users set pass=@pass where username = @username
+
+
+--select * from users
