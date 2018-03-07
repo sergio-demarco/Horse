@@ -11,7 +11,7 @@ namespace Horse.Class
     {
 
         private bool estado = false;
-        private string user = string.Empty;
+        public string user = string.Empty;
         public bool Estado { get => estado; set => estado = value; }
         internal Connection MyConnection { get => myConnection; set => myConnection = value; }
         private Connection myConnection = new Connection();

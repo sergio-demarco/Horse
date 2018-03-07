@@ -21,3 +21,6 @@ C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.pdb
 C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.Forms.DialogOk.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.Forms.MyPass.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\Horse\obj\Debug\Horse.Forms.Permission.resources
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.exe
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.pdb
