@@ -12,19 +12,20 @@ namespace Horse.Class
 {
     class Connection
     {
-        public string tryConnection(){
+        public SqlConnection getConnection()
+        {
+            try
             {
-                string connectionString;
-                try
-                {
-                    connectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
-                }
-                catch (Exception ex)
-                {
-                    throw (ex);
-                }
-                return connectionString;
+                SqlConnection Conectar = new SqlConnection(ConfigurationManager.ConnectionStrings["HorseConnection"].ToString());
+                Conectar.Open();
+                Conectar.Close();
+
+                return Conectar;
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
             }
         }
-}
+    }
 }
