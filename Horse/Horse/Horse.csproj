@@ -49,21 +49,29 @@
     <Compile Include="Class\Connection.cs" />
     <Compile Include="Class\LoginController.cs" />
     <Compile Include="Class\MenuController.cs" />
-    <Compile Include="Forms\DialogOk.cs" />
+    <Compile Include="Forms\DialogOk.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\DialogOk.Designer.cs">
       <DependentUpon>DialogOk.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Passwords.cs" />
+    <Compile Include="Forms\Passwords.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Passwords.Designer.cs">
       <DependentUpon>Passwords.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MyPass.cs" />
+    <Compile Include="Forms\MyPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\MyPass.Designer.cs">
       <DependentUpon>MyPass.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Permissions.cs" />
-    <Compile Include="Forms\Permissions.Designer.cs">
-      <DependentUpon>Permissions.cs</DependentUpon>
+    <Compile Include="Forms\Permision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Permision.Designer.cs">
+      <DependentUpon>Permision.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -84,9 +92,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MyPass.resx">
       <DependentUpon>MyPass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Permissions.resx">
-      <DependentUpon>Permissions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
