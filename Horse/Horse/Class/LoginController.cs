@@ -11,18 +11,18 @@ namespace Horse.Class
     {
 
         private bool estado = false;
-        public string user = string.Empty;
         public bool Estado { get => estado; set => estado = value; }
+        public static string User { get; set; }
         internal Connection MyConnection { get => myConnection; set => myConnection = value; }
         private Connection myConnection = new Connection();
 
-        public string getUser()
+        public LoginController()
         {
-            return user;
         }
-        public void setUser(string username)
+
+        public void setUser(string user)
         {
-            this.user = username;
+            User = user;
         }
         public Boolean loginToTheSystem(string user, string pass)
         {

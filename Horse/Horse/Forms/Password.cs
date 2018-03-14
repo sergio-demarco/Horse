@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Horse.Forms
 {
-    public partial class Passwords : Form
+    public partial class Password : Form
     {
-        public Passwords()
+        public Password()
         {
             InitializeComponent();
         }

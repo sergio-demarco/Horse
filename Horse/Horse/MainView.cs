@@ -32,7 +32,7 @@ namespace Horse
 
         private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Forms.Passwords pass = new Forms.Passwords();
+            Forms.Password pass = new Forms.Password();
             pass.Show();
         }
 
@@ -44,7 +44,7 @@ namespace Horse
 
         private void gestionarPermisosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Forms.Permission myPermission  = new Forms.Permission();
+            Forms.Permision myPermission  = new Forms.Permision();
             myPermission.Show();
         }
     }
