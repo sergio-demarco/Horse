@@ -47,5 +47,10 @@ namespace Horse
             Forms.Permision myPermission  = new Forms.Permision();
             myPermission.Show();
         }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
