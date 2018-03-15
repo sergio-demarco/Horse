@@ -28,6 +28,7 @@ namespace Horse.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogOk));
             this.btnDialogOk = new System.Windows.Forms.Button();
             this.lblDialogOk = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -60,6 +61,7 @@ namespace Horse.Forms
             this.ControlBox = false;
             this.Controls.Add(this.lblDialogOk);
             this.Controls.Add(this.btnDialogOk);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DialogOk";
             this.Text = " ";
             this.ResumeLayout(false);

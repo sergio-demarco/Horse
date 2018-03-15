@@ -28,7 +28,7 @@ namespace Horse
             if (myLogin.Estado == true)
             {
                 myLogin.checkIfIsAdmin(txtUsuario.Text, txtContrasena.Text);
-                myLogin.setUser(txtUsuario.Text);
+                myLogin.setUserActive(txtUsuario.Text);
                 MainView miForm1 = new MainView();
                 this.Hide();  // oculta el form inicial 
                 miForm1.ShowDialog(this);  // (muestra el form de tu app)

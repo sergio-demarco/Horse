@@ -12,6 +12,7 @@ namespace Horse.Class
 
         private bool estado = false;
         public bool Estado { get => estado; set => estado = value; }
+        static internal string userActive;
         public static string User { get; set; }
         internal Connection MyConnection { get => myConnection; set => myConnection = value; }
         private Connection myConnection = new Connection();
@@ -20,9 +21,14 @@ namespace Horse.Class
         {
         }
 
-        public void setUser(string user)
+        public string getUserActive()
         {
-            User = user;
+            return userActive;
+        }
+
+        public void setUserActive(string user)
+        {
+            userActive = user;
         }
         public Boolean loginToTheSystem(string user, string pass)
         {

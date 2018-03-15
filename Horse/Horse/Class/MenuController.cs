@@ -14,7 +14,7 @@ namespace Horse.Class
         {
             SqlConnection connection = myConnection.getConnection();
             LoginController myLogin = new LoginController();
-            string username = myLogin.;
+            string username = myLogin.getUserActive();
             bool success = false;
             try
             {
