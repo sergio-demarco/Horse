@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainView));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,27 +81,42 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitarAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ribbon1 = new System.Windows.Forms.Ribbon();
-            this.ribbonTab1 = new System.Windows.Forms.RibbonTab();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonButton1 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton2 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton3 = new System.Windows.Forms.RibbonButton();
+            this.ribbonItemGroup1 = new System.Windows.Forms.RibbonItemGroup();
+            this.ribbonComboBox1 = new System.Windows.Forms.RibbonComboBox();
+            this.ribbonCheckBox1 = new System.Windows.Forms.RibbonCheckBox();
+            this.ribbonHost1 = new System.Windows.Forms.RibbonHost();
+            this.ribbonLabel1 = new System.Windows.Forms.RibbonLabel();
+            this.ribbonUpDown1 = new System.Windows.Forms.RibbonUpDown();
+            this.ribbonDescriptionMenuItem1 = new System.Windows.Forms.RibbonDescriptionMenuItem();
+            this.ribbonComboBox2 = new System.Windows.Forms.RibbonComboBox();
+            this.ribbonSeparator1 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbonTextBox1 = new System.Windows.Forms.RibbonTextBox();
+            this.ribbonItemGroup2 = new System.Windows.Forms.RibbonItemGroup();
+            this.ribbonButtonList1 = new System.Windows.Forms.RibbonButtonList();
+            this.ribbonButton4 = new System.Windows.Forms.RibbonButton();
+            this.ribbonColorChooser1 = new System.Windows.Forms.RibbonColorChooser();
+            this.ribbonCheckBox2 = new System.Windows.Forms.RibbonCheckBox();
+            this.ribbonLabel2 = new System.Windows.Forms.RibbonLabel();
+            this.ribbonHost2 = new System.Windows.Forms.RibbonHost();
+            this.ribbonDescriptionMenuItem2 = new System.Windows.Forms.RibbonDescriptionMenuItem();
+            this.ribbonColorChooser2 = new System.Windows.Forms.RibbonColorChooser();
+            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonComboBox4 = new System.Windows.Forms.RibbonComboBox();
+            this.ribbonTab3 = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanel4 = new System.Windows.Forms.RibbonPanel();
+            this.ssButton5 = new System.Windows.Forms.RibbonButton();
+            this.ribbonPanel5 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonComboBox3 = new System.Windows.Forms.RibbonComboBox();
+            this.ribbonPanel6 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonColorChooser3 = new System.Windows.Forms.RibbonColorChooser();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.editarToolStripMenuItem,
-            this.verToolStripMenuItem,
-            this.herramientasToolStripMenuItem,
-            this.sesionToolStripMenuItem,
-            this.ayudaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1023, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // archivoToolStripMenuItem
             // 
@@ -480,38 +494,28 @@
             this.abrirTicketToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.abrirTicketToolStripMenuItem.Text = "Abrir Ticket";
             // 
-            // ribbon1
+            // menuStrip1
             // 
-            this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ribbon1.Location = new System.Drawing.Point(0, 24);
-            this.ribbon1.Minimized = false;
-            this.ribbon1.Name = "ribbon1";
-            // 
-            // 
-            // 
-            this.ribbon1.OrbDropDown.BorderRoundness = 8;
-            this.ribbon1.OrbDropDown.Location = new System.Drawing.Point(0, 0);
-            this.ribbon1.OrbDropDown.Name = "";
-            this.ribbon1.OrbDropDown.Size = new System.Drawing.Size(527, 447);
-            this.ribbon1.OrbDropDown.TabIndex = 0;
-            this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(1023, 172);
-            this.ribbon1.TabIndex = 1;
-            this.ribbon1.Tabs.Add(this.ribbonTab1);
-            this.ribbon1.TabsMargin = new System.Windows.Forms.Padding(12, 26, 20, 0);
-            this.ribbon1.Text = "ribbon1";
-            // 
-            // ribbonTab1
-            // 
-            this.ribbonTab1.Name = "ribbonTab1";
-            this.ribbonTab1.Text = "ribbonTab1";
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.archivoToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.editarToolStripMenuItem,
+            this.verToolStripMenuItem,
+            this.herramientasToolStripMenuItem,
+            this.sesionToolStripMenuItem,
+            this.ayudaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1023, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 418);
-            this.Controls.Add(this.ribbon1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -529,50 +533,37 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sesionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem contraseñaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem permisosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresoStockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imprimirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuracionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem copiarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cortarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pegarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem seleccionarTodoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem informesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem solicitarAyudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem abrirTicketToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cambiarContraseñaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem miContraseñaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gestionarPermisosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ingresoStockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem nuevaVentaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem balanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem parcialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem delDiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mensualToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copiarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cortarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pegarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seleccionarTodoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pedidoProveedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem pedidoProveedorToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deVentasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem balanceToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tarjetaVsEfectivoToolStripMenuItem;
@@ -583,7 +574,50 @@
         private System.Windows.Forms.ToolStripMenuItem visitasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem motivoVisitaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem programacionVacunasToolStripMenuItem;
-        private System.Windows.Forms.Ribbon ribbon1;
-        private System.Windows.Forms.RibbonTab ribbonTab1;
+        private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sesionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contraseñaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cambiarContraseñaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miContraseñaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem permisosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionarPermisosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem solicitarAyudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abrirTicketToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.RibbonTab ribbonTab2;
+        private System.Windows.Forms.RibbonPanel ribbonPanel2;
+        private System.Windows.Forms.RibbonButton ribbonButton1;
+        private System.Windows.Forms.RibbonButton ribbonButton2;
+        private System.Windows.Forms.RibbonButton ribbonButton3;
+        private System.Windows.Forms.RibbonItemGroup ribbonItemGroup1;
+        private System.Windows.Forms.RibbonComboBox ribbonComboBox1;
+        private System.Windows.Forms.RibbonCheckBox ribbonCheckBox1;
+        private System.Windows.Forms.RibbonHost ribbonHost1;
+        private System.Windows.Forms.RibbonLabel ribbonLabel1;
+        private System.Windows.Forms.RibbonUpDown ribbonUpDown1;
+        private System.Windows.Forms.RibbonDescriptionMenuItem ribbonDescriptionMenuItem1;
+        private System.Windows.Forms.RibbonComboBox ribbonComboBox2;
+        private System.Windows.Forms.RibbonSeparator ribbonSeparator1;
+        private System.Windows.Forms.RibbonTextBox ribbonTextBox1;
+        private System.Windows.Forms.RibbonItemGroup ribbonItemGroup2;
+        private System.Windows.Forms.RibbonButtonList ribbonButtonList1;
+        private System.Windows.Forms.RibbonButton ribbonButton4;
+        private System.Windows.Forms.RibbonColorChooser ribbonColorChooser1;
+        private System.Windows.Forms.RibbonCheckBox ribbonCheckBox2;
+        private System.Windows.Forms.RibbonLabel ribbonLabel2;
+        private System.Windows.Forms.RibbonHost ribbonHost2;
+        private System.Windows.Forms.RibbonDescriptionMenuItem ribbonDescriptionMenuItem2;
+        private System.Windows.Forms.RibbonColorChooser ribbonColorChooser2;
+        private System.Windows.Forms.RibbonPanel ribbonPanel3;
+        private System.Windows.Forms.RibbonComboBox ribbonComboBox4;
+        private System.Windows.Forms.RibbonTab ribbonTab3;
+        private System.Windows.Forms.RibbonPanel ribbonPanel4;
+        private System.Windows.Forms.RibbonButton ssButton5;
+        private System.Windows.Forms.RibbonPanel ribbonPanel5;
+        private System.Windows.Forms.RibbonComboBox ribbonComboBox3;
+        private System.Windows.Forms.RibbonPanel ribbonPanel6;
+        private System.Windows.Forms.RibbonColorChooser ribbonColorChooser3;
     }
 }
