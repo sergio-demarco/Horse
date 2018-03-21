@@ -48,6 +48,5 @@ namespace Horse
             myPermission.Show();
         }
 
-
     }
 }

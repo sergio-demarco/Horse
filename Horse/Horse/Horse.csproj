@@ -147,6 +147,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -164,6 +165,9 @@
   <ItemGroup>
     <Content Include="HorseLogo.ico" />
     <Content Include="Images\HorseLogo.ico" />
+    <None Include="Resources\HorseLogo2.jpg" />
+    <None Include="Resources\HorseLogo.ico" />
+    <None Include="Resources\menu.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

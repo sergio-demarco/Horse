@@ -82,39 +82,10 @@
             this.solicitarAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
+            this.ribbon1 = new System.Windows.Forms.Ribbon();
+            this.ribbonTab1 = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanel1 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton1 = new System.Windows.Forms.RibbonButton();
-            this.ribbonButton2 = new System.Windows.Forms.RibbonButton();
-            this.ribbonButton3 = new System.Windows.Forms.RibbonButton();
-            this.ribbonItemGroup1 = new System.Windows.Forms.RibbonItemGroup();
-            this.ribbonComboBox1 = new System.Windows.Forms.RibbonComboBox();
-            this.ribbonCheckBox1 = new System.Windows.Forms.RibbonCheckBox();
-            this.ribbonHost1 = new System.Windows.Forms.RibbonHost();
-            this.ribbonLabel1 = new System.Windows.Forms.RibbonLabel();
-            this.ribbonUpDown1 = new System.Windows.Forms.RibbonUpDown();
-            this.ribbonDescriptionMenuItem1 = new System.Windows.Forms.RibbonDescriptionMenuItem();
-            this.ribbonComboBox2 = new System.Windows.Forms.RibbonComboBox();
-            this.ribbonSeparator1 = new System.Windows.Forms.RibbonSeparator();
-            this.ribbonTextBox1 = new System.Windows.Forms.RibbonTextBox();
-            this.ribbonItemGroup2 = new System.Windows.Forms.RibbonItemGroup();
-            this.ribbonButtonList1 = new System.Windows.Forms.RibbonButtonList();
-            this.ribbonButton4 = new System.Windows.Forms.RibbonButton();
-            this.ribbonColorChooser1 = new System.Windows.Forms.RibbonColorChooser();
-            this.ribbonCheckBox2 = new System.Windows.Forms.RibbonCheckBox();
-            this.ribbonLabel2 = new System.Windows.Forms.RibbonLabel();
-            this.ribbonHost2 = new System.Windows.Forms.RibbonHost();
-            this.ribbonDescriptionMenuItem2 = new System.Windows.Forms.RibbonDescriptionMenuItem();
-            this.ribbonColorChooser2 = new System.Windows.Forms.RibbonColorChooser();
-            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonComboBox4 = new System.Windows.Forms.RibbonComboBox();
-            this.ribbonTab3 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel4 = new System.Windows.Forms.RibbonPanel();
-            this.ssButton5 = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel5 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonComboBox3 = new System.Windows.Forms.RibbonComboBox();
-            this.ribbonPanel6 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonColorChooser3 = new System.Windows.Forms.RibbonColorChooser();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -511,11 +482,53 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // ribbon1
+            // 
+            this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ribbon1.Location = new System.Drawing.Point(0, 24);
+            this.ribbon1.Minimized = false;
+            this.ribbon1.Name = "ribbon1";
+            // 
+            // 
+            // 
+            this.ribbon1.OrbDropDown.BorderRoundness = 8;
+            this.ribbon1.OrbDropDown.Location = new System.Drawing.Point(0, 0);
+            this.ribbon1.OrbDropDown.Name = "";
+            this.ribbon1.OrbDropDown.Size = new System.Drawing.Size(527, 447);
+            this.ribbon1.OrbDropDown.TabIndex = 0;
+            this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
+            this.ribbon1.Size = new System.Drawing.Size(1023, 136);
+            this.ribbon1.TabIndex = 1;
+            this.ribbon1.Tabs.Add(this.ribbonTab1);
+            this.ribbon1.TabsMargin = new System.Windows.Forms.Padding(12, 26, 20, 0);
+            this.ribbon1.Text = "ribbon1";
+            // 
+            // ribbonTab1
+            // 
+            this.ribbonTab1.Name = "ribbonTab1";
+            this.ribbonTab1.Panels.Add(this.ribbonPanel1);
+            this.ribbonTab1.Text = "ribbonTab1";
+            // 
+            // ribbonPanel1
+            // 
+            this.ribbonPanel1.Items.Add(this.ribbonButton1);
+            this.ribbonPanel1.Name = "ribbonPanel1";
+            this.ribbonPanel1.Text = "ribbonPanel1";
+            // 
+            // ribbonButton1
+            // 
+            this.ribbonButton1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.Image")));
+            this.ribbonButton1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.LargeImage")));
+            this.ribbonButton1.Name = "ribbonButton1";
+            this.ribbonButton1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.SmallImage")));
+            this.ribbonButton1.Text = "ribbonButton1";
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 418);
+            this.Controls.Add(this.ribbon1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -586,38 +599,9 @@
         private System.Windows.Forms.ToolStripMenuItem solicitarAyudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abrirTicketToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.RibbonTab ribbonTab2;
-        private System.Windows.Forms.RibbonPanel ribbonPanel2;
+        private System.Windows.Forms.Ribbon ribbon1;
+        private System.Windows.Forms.RibbonTab ribbonTab1;
+        private System.Windows.Forms.RibbonPanel ribbonPanel1;
         private System.Windows.Forms.RibbonButton ribbonButton1;
-        private System.Windows.Forms.RibbonButton ribbonButton2;
-        private System.Windows.Forms.RibbonButton ribbonButton3;
-        private System.Windows.Forms.RibbonItemGroup ribbonItemGroup1;
-        private System.Windows.Forms.RibbonComboBox ribbonComboBox1;
-        private System.Windows.Forms.RibbonCheckBox ribbonCheckBox1;
-        private System.Windows.Forms.RibbonHost ribbonHost1;
-        private System.Windows.Forms.RibbonLabel ribbonLabel1;
-        private System.Windows.Forms.RibbonUpDown ribbonUpDown1;
-        private System.Windows.Forms.RibbonDescriptionMenuItem ribbonDescriptionMenuItem1;
-        private System.Windows.Forms.RibbonComboBox ribbonComboBox2;
-        private System.Windows.Forms.RibbonSeparator ribbonSeparator1;
-        private System.Windows.Forms.RibbonTextBox ribbonTextBox1;
-        private System.Windows.Forms.RibbonItemGroup ribbonItemGroup2;
-        private System.Windows.Forms.RibbonButtonList ribbonButtonList1;
-        private System.Windows.Forms.RibbonButton ribbonButton4;
-        private System.Windows.Forms.RibbonColorChooser ribbonColorChooser1;
-        private System.Windows.Forms.RibbonCheckBox ribbonCheckBox2;
-        private System.Windows.Forms.RibbonLabel ribbonLabel2;
-        private System.Windows.Forms.RibbonHost ribbonHost2;
-        private System.Windows.Forms.RibbonDescriptionMenuItem ribbonDescriptionMenuItem2;
-        private System.Windows.Forms.RibbonColorChooser ribbonColorChooser2;
-        private System.Windows.Forms.RibbonPanel ribbonPanel3;
-        private System.Windows.Forms.RibbonComboBox ribbonComboBox4;
-        private System.Windows.Forms.RibbonTab ribbonTab3;
-        private System.Windows.Forms.RibbonPanel ribbonPanel4;
-        private System.Windows.Forms.RibbonButton ssButton5;
-        private System.Windows.Forms.RibbonPanel ribbonPanel5;
-        private System.Windows.Forms.RibbonComboBox ribbonComboBox3;
-        private System.Windows.Forms.RibbonPanel ribbonPanel6;
-        private System.Windows.Forms.RibbonColorChooser ribbonColorChooser3;
     }
 }
