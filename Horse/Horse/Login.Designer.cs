@@ -41,7 +41,7 @@
             // 
             this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsuario.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.txtUsuario.Location = new System.Drawing.Point(124, 82);
+            this.txtUsuario.Location = new System.Drawing.Point(110, 25);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(299, 23);
             this.txtUsuario.TabIndex = 0;
@@ -49,9 +49,9 @@
             // txtContrasena
             // 
             this.txtContrasena.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.txtContrasena.Location = new System.Drawing.Point(124, 131);
+            this.txtContrasena.Location = new System.Drawing.Point(110, 74);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.PasswordChar = '●';
             this.txtContrasena.Size = new System.Drawing.Size(299, 23);
             this.txtContrasena.TabIndex = 1;
             // 
@@ -59,7 +59,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(26, 85);
+            this.lblUsuario.Location = new System.Drawing.Point(12, 28);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(62, 16);
             this.lblUsuario.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             this.lblContrasena.AutoSize = true;
             this.lblContrasena.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.lblContrasena.Location = new System.Drawing.Point(26, 134);
+            this.lblContrasena.Location = new System.Drawing.Point(12, 77);
             this.lblContrasena.Name = "lblContrasena";
             this.lblContrasena.Size = new System.Drawing.Size(89, 16);
             this.lblContrasena.TabIndex = 3;
@@ -79,9 +79,9 @@
             // 
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEntrar.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.btnEntrar.Location = new System.Drawing.Point(83, 199);
+            this.btnEntrar.Location = new System.Drawing.Point(37, 174);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(283, 23);
+            this.btnEntrar.Size = new System.Drawing.Size(363, 31);
             this.btnEntrar.TabIndex = 4;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             // 
             this.lblErrorLogin.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblErrorLogin.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorLogin.Location = new System.Drawing.Point(65, 225);
+            this.lblErrorLogin.Location = new System.Drawing.Point(56, 208);
             this.lblErrorLogin.Name = "lblErrorLogin";
             this.lblErrorLogin.Size = new System.Drawing.Size(344, 23);
             this.lblErrorLogin.TabIndex = 5;
@@ -102,6 +102,7 @@
             this.AcceptButton = this.btnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(201)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(448, 257);
             this.Controls.Add(this.lblErrorLogin);
             this.Controls.Add(this.btnEntrar);
