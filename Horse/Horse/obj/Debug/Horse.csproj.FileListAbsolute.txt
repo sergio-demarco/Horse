@@ -37,3 +37,8 @@ C:\Users\Admin\Desktop\Horse\Horse\Horse\bin\Debug\Horse.exe.CodeAnalysisLog.xml
 C:\Users\Admin\Desktop\Horse\Horse\Horse\bin\Debug\Horse.exe.lastcodeanalysissucceeded
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Password.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Permision.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.DialogOk.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.MyPass.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.NewDocument.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Password.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Permision.resources

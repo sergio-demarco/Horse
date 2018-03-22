@@ -22,13 +22,13 @@ namespace EmailServiceHorse
 
         protected override void OnStart(string[] args)
         {
-            this.WriteToFile("Simple Service started {0}");
+            this.WriteToFile("HORSE Service started {0}");
             this.ScheduleService();
         }
 
         protected override void OnStop()
         {
-            this.WriteToFile("Simple Service stopped {0}");
+            this.WriteToFile("HORSE Service stopped {0}");
             this.Schedular.Dispose();
         }
         private Timer Schedular;
@@ -138,7 +138,7 @@ namespace EmailServiceHorse
                         WriteToFile("Email sent successfully to: " + name + " " + email);
                     }
                 }
-                this.ScheduleService();
+               // this.ScheduleService();
             }
             catch (Exception ex)
             {
