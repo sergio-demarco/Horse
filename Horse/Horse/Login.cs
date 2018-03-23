@@ -39,5 +39,10 @@ namespace Horse
                 lblErrorLogin.Visible = true;
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Focus();
+        }
     }
 }

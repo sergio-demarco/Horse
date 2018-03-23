@@ -55,7 +55,7 @@ namespace Horse
         private void ClientsButton_Click(object sender, EventArgs e)
         {
 
-            if (PanelMainView.Controls.Contains(UserControls.Clients.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.Clients.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.Clients.Instance);
@@ -68,7 +68,7 @@ namespace Horse
 
         private void EditClientButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.ModifyClients.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.ModifyClients.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.ModifyClients.Instance);
@@ -82,7 +82,7 @@ namespace Horse
 
         private void CalendarButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.CalendarClients.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.CalendarClients.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.CalendarClients.Instance);
@@ -96,7 +96,7 @@ namespace Horse
 
         private void ClientAccountButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.ClientAccount.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.ClientAccount.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.ClientAccount.Instance);
@@ -109,7 +109,7 @@ namespace Horse
 
         private void SaleButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.NewSale.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.NewSale.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.NewSale.Instance);
@@ -123,7 +123,7 @@ namespace Horse
 
         private void CutterButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.CutterPrice.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.CutterPrice.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.CutterPrice.Instance);
@@ -136,7 +136,7 @@ namespace Horse
 
         private void FoodButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.FoodPrice.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.FoodPrice.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.FoodPrice.Instance);
@@ -150,7 +150,7 @@ namespace Horse
 
         private void PensionaryButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.PensionerPrice.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.PensionerPrice.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.PensionerPrice.Instance);
@@ -163,7 +163,7 @@ namespace Horse
 
         private void VaccineButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.VaccinePrice.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.VaccinePrice.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.VaccinePrice.Instance);
@@ -176,7 +176,7 @@ namespace Horse
 
         private void AccesoryButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.AccesoryPrice.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.AccesoryPrice.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.AccesoryPrice.Instance);
@@ -189,7 +189,7 @@ namespace Horse
 
         private void SurgeryButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.SurgeryPrice.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.SurgeryPrice.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.SurgeryPrice.Instance);
@@ -202,7 +202,7 @@ namespace Horse
 
         private void AllProductsButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.AllPrice.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.AllPrice.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.AllPrice.Instance);
@@ -215,7 +215,7 @@ namespace Horse
 
         private void NewStockButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.NewStock.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.NewStock.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.NewStock.Instance);
@@ -228,7 +228,7 @@ namespace Horse
 
         private void ModifyStockButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.ModifyStock.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.ModifyStock.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.ModifyStock.Instance);
@@ -241,7 +241,7 @@ namespace Horse
 
         private void SearchStockButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.SearchStock.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.SearchStock.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.SearchStock.Instance);
@@ -254,7 +254,7 @@ namespace Horse
 
         private void NewSuppliersButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.NewProvider.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.NewProvider.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.NewProvider.Instance);
@@ -267,7 +267,7 @@ namespace Horse
 
         private void SearchSuppliersButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.SearchProvider.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.SearchProvider.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.SearchProvider.Instance);
@@ -280,7 +280,7 @@ namespace Horse
 
         private void PrintSuppliersButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.PrintProvider.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.PrintProvider.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.PrintProvider.Instance);
@@ -293,7 +293,7 @@ namespace Horse
 
         private void DailyBalanceButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.DailyBalance.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.DailyBalance.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.DailyBalance.Instance);
@@ -306,7 +306,7 @@ namespace Horse
 
         private void MonthlyBalanceButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.MonthlyBalance.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.MonthlyBalance.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.MonthlyBalance.Instance);
@@ -319,7 +319,7 @@ namespace Horse
 
         private void StaticsSuppliersButton_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.StaticsBalance.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.StaticsBalance.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.StaticsBalance.Instance);
@@ -332,7 +332,7 @@ namespace Horse
 
         private void NewClient_Click(object sender, EventArgs e)
         {
-            if (PanelMainView.Controls.Contains(UserControls.NewClient.Instance))
+            if (!PanelMainView.Controls.Contains(UserControls.NewClient.Instance))
             {
 
                 PanelMainView.Controls.Add(UserControls.NewClient.Instance);

@@ -110,138 +110,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenuForms\AccesoryPrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\AccesoryPrice.Designer.cs">
-      <DependentUpon>AccesoryPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\AllPrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\AllPrice.Designer.cs">
-      <DependentUpon>AllPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\CalendarClients.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\CalendarClients.Designer.cs">
-      <DependentUpon>CalendarClients.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\ClientAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\ClientAccount.Designer.cs">
-      <DependentUpon>ClientAccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\Clients.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\Clients.Designer.cs">
-      <DependentUpon>Clients.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\CutterPrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\CutterPrice.Designer.cs">
-      <DependentUpon>CutterPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\DailyBalance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\DailyBalance.Designer.cs">
-      <DependentUpon>DailyBalance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\FoodPrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\FoodPrice.Designer.cs">
-      <DependentUpon>FoodPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\ModifyClients.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\ModifyClients.Designer.cs">
-      <DependentUpon>ModifyClients.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\ModifyStock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\ModifyStock.Designer.cs">
-      <DependentUpon>ModifyStock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\MonthlyBalance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\MonthlyBalance.Designer.cs">
-      <DependentUpon>MonthlyBalance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\NewClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\NewClient.Designer.cs">
-      <DependentUpon>NewClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\NewProvider.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\NewProvider.Designer.cs">
-      <DependentUpon>NewProvider.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\NewSale.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\NewSale.Designer.cs">
-      <DependentUpon>NewSale.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\NewStock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\NewStock.Designer.cs">
-      <DependentUpon>NewStock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\PensionerPrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\PensionerPrice.Designer.cs">
-      <DependentUpon>PensionerPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\PrintProvider.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\PrintProvider.Designer.cs">
-      <DependentUpon>PrintProvider.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\SearchProvider.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\SearchProvider.Designer.cs">
-      <DependentUpon>SearchProvider.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\SearchStock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\SearchStock.Designer.cs">
-      <DependentUpon>SearchStock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\StaticsBalance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\StaticsBalance.Designer.cs">
-      <DependentUpon>StaticsBalance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\SurgeryPrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\SurgeryPrice.Designer.cs">
-      <DependentUpon>SurgeryPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuForms\VaccinePrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuForms\VaccinePrice.Designer.cs">
-      <DependentUpon>VaccinePrice.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -400,72 +268,6 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\AccesoryPrice.resx">
-      <DependentUpon>AccesoryPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\AllPrice.resx">
-      <DependentUpon>AllPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\CalendarClients.resx">
-      <DependentUpon>CalendarClients.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\ClientAccount.resx">
-      <DependentUpon>ClientAccount.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\Clients.resx">
-      <DependentUpon>Clients.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\CutterPrice.resx">
-      <DependentUpon>CutterPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\DailyBalance.resx">
-      <DependentUpon>DailyBalance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\FoodPrice.resx">
-      <DependentUpon>FoodPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\ModifyClients.resx">
-      <DependentUpon>ModifyClients.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\ModifyStock.resx">
-      <DependentUpon>ModifyStock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\MonthlyBalance.resx">
-      <DependentUpon>MonthlyBalance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\NewClient.resx">
-      <DependentUpon>NewClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\NewProvider.resx">
-      <DependentUpon>NewProvider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\NewSale.resx">
-      <DependentUpon>NewSale.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\NewStock.resx">
-      <DependentUpon>NewStock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\PensionerPrice.resx">
-      <DependentUpon>PensionerPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\PrintProvider.resx">
-      <DependentUpon>PrintProvider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\SearchProvider.resx">
-      <DependentUpon>SearchProvider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\SearchStock.resx">
-      <DependentUpon>SearchStock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\StaticsBalance.resx">
-      <DependentUpon>StaticsBalance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\SurgeryPrice.resx">
-      <DependentUpon>SurgeryPrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForms\VaccinePrice.resx">
-      <DependentUpon>VaccinePrice.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
@@ -479,6 +281,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NewClient.resx">
+      <DependentUpon>NewClient.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

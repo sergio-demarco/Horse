@@ -41,7 +41,7 @@
             // 
             this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsuario.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.txtUsuario.Location = new System.Drawing.Point(110, 25);
+            this.txtUsuario.Location = new System.Drawing.Point(115, 44);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(299, 23);
             this.txtUsuario.TabIndex = 0;
@@ -49,7 +49,7 @@
             // txtContrasena
             // 
             this.txtContrasena.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.txtContrasena.Location = new System.Drawing.Point(110, 74);
+            this.txtContrasena.Location = new System.Drawing.Point(115, 93);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '●';
             this.txtContrasena.Size = new System.Drawing.Size(299, 23);
@@ -59,7 +59,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(12, 28);
+            this.lblUsuario.Location = new System.Drawing.Point(17, 47);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(62, 16);
             this.lblUsuario.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             this.lblContrasena.AutoSize = true;
             this.lblContrasena.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.lblContrasena.Location = new System.Drawing.Point(12, 77);
+            this.lblContrasena.Location = new System.Drawing.Point(17, 96);
             this.lblContrasena.Name = "lblContrasena";
             this.lblContrasena.Size = new System.Drawing.Size(89, 16);
             this.lblContrasena.TabIndex = 3;
@@ -114,6 +114,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingresar a Horse";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
