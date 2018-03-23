@@ -250,6 +250,138 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\AccesoryPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AccesoryPrice.Designer.cs">
+      <DependentUpon>AccesoryPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AllPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AllPrice.Designer.cs">
+      <DependentUpon>AllPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CalendarClients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CalendarClients.Designer.cs">
+      <DependentUpon>CalendarClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ClientAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ClientAccount.Designer.cs">
+      <DependentUpon>ClientAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Clients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CutterPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CutterPrice.Designer.cs">
+      <DependentUpon>CutterPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DailyBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DailyBalance.Designer.cs">
+      <DependentUpon>DailyBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FoodPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FoodPrice.Designer.cs">
+      <DependentUpon>FoodPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModifyClients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModifyClients.Designer.cs">
+      <DependentUpon>ModifyClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModifyStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ModifyStock.Designer.cs">
+      <DependentUpon>ModifyStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MonthlyBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MonthlyBalance.Designer.cs">
+      <DependentUpon>MonthlyBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewClient.Designer.cs">
+      <DependentUpon>NewClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewProvider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewProvider.Designer.cs">
+      <DependentUpon>NewProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewSale.Designer.cs">
+      <DependentUpon>NewSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewStock.Designer.cs">
+      <DependentUpon>NewStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PensionerPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PensionerPrice.Designer.cs">
+      <DependentUpon>PensionerPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PrintProvider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PrintProvider.Designer.cs">
+      <DependentUpon>PrintProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchProvider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchProvider.Designer.cs">
+      <DependentUpon>SearchProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchStock.Designer.cs">
+      <DependentUpon>SearchStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StaticsBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\StaticsBalance.Designer.cs">
+      <DependentUpon>StaticsBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SurgeryPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SurgeryPrice.Designer.cs">
+      <DependentUpon>SurgeryPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VaccinePrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\VaccinePrice.Designer.cs">
+      <DependentUpon>VaccinePrice.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\DialogOk.resx">
       <DependentUpon>DialogOk.cs</DependentUpon>
     </EmbeddedResource>
@@ -379,5 +511,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

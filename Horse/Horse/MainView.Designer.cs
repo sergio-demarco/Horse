@@ -134,6 +134,7 @@
             this.ModifyStockButton = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel21 = new System.Windows.Forms.RibbonPanel();
             this.SearchStockButton = new System.Windows.Forms.RibbonButton();
+            this.PanelMainView = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -947,12 +948,21 @@
             this.SearchStockButton.Text = "";
             this.SearchStockButton.Click += new System.EventHandler(this.SearchStockButton_Click);
             // 
+            // PanelMainView
+            // 
+            this.PanelMainView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelMainView.Location = new System.Drawing.Point(0, 167);
+            this.PanelMainView.Name = "PanelMainView";
+            this.PanelMainView.Size = new System.Drawing.Size(1023, 251);
+            this.PanelMainView.TabIndex = 2;
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(201)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1023, 418);
+            this.Controls.Add(this.PanelMainView);
             this.Controls.Add(this.ribbon1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1076,5 +1086,6 @@
         private System.Windows.Forms.RibbonButton SearchStockButton;
         private System.Windows.Forms.RibbonPanel ribbonPanel22;
         private System.Windows.Forms.RibbonButton NewClient;
+        private System.Windows.Forms.Panel PanelMainView;
     }
 }

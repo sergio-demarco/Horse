@@ -48,140 +48,299 @@ namespace Horse
 
         private void gestionarPermisosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Forms.Permision myPermission  = new Forms.Permision();
+            Forms.Permision myPermission = new Forms.Permision();
             myPermission.Show();
         }
 
         private void ClientsButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.Clients myClients = new MainMenuForms.Clients();
-            myClients.Show();
+
+            if (PanelMainView.Controls.Contains(UserControls.Clients.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.Clients.Instance);
+                UserControls.Clients.Instance.Dock = DockStyle.Fill;
+                UserControls.Clients.Instance.BringToFront();
+            }
+            else
+                UserControls.Clients.Instance.BringToFront();
         }
 
         private void EditClientButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.ModifyClients myModifyClients = new MainMenuForms.ModifyClients();
-            myModifyClients.Show();
+            if (PanelMainView.Controls.Contains(UserControls.ModifyClients.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.ModifyClients.Instance);
+                UserControls.ModifyClients.Instance.Dock = DockStyle.Fill;
+                UserControls.ModifyClients.Instance.BringToFront();
+            }
+            else
+                UserControls.ModifyClients.Instance.BringToFront();
+
         }
 
         private void CalendarButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.CalendarClients myCalendarClients = new MainMenuForms.CalendarClients();
-            myCalendarClients.Show();
+            if (PanelMainView.Controls.Contains(UserControls.CalendarClients.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.CalendarClients.Instance);
+                UserControls.CalendarClients.Instance.Dock = DockStyle.Fill;
+                UserControls.CalendarClients.Instance.BringToFront();
+            }
+            else
+                UserControls.CalendarClients.Instance.BringToFront();
+
         }
 
         private void ClientAccountButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.ClientAccount myClientAccount = new MainMenuForms.ClientAccount();
-            myClientAccount.Show();
+            if (PanelMainView.Controls.Contains(UserControls.ClientAccount.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.ClientAccount.Instance);
+                UserControls.ClientAccount.Instance.Dock = DockStyle.Fill;
+                UserControls.ClientAccount.Instance.BringToFront();
+            }
+            else
+                UserControls.ClientAccount.Instance.BringToFront();
         }
 
         private void SaleButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.NewSale myNewSale = new MainMenuForms.NewSale();
-            myNewSale.Show();
+            if (PanelMainView.Controls.Contains(UserControls.NewSale.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.NewSale.Instance);
+                UserControls.NewSale.Instance.Dock = DockStyle.Fill;
+                UserControls.NewSale.Instance.BringToFront();
+            }
+            else
+                UserControls.NewSale.Instance.BringToFront();
+
         }
 
         private void CutterButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.CutterPrice myCutterPrice = new MainMenuForms.CutterPrice();
-            myCutterPrice.Show();
+            if (PanelMainView.Controls.Contains(UserControls.CutterPrice.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.CutterPrice.Instance);
+                UserControls.CutterPrice.Instance.Dock = DockStyle.Fill;
+                UserControls.CutterPrice.Instance.BringToFront();
+            }
+            else
+                UserControls.CutterPrice.Instance.BringToFront();
         }
 
         private void FoodButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.FoodPrice myFoodPrice = new MainMenuForms.FoodPrice();
-            myFoodPrice.Show();
+            if (PanelMainView.Controls.Contains(UserControls.FoodPrice.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.FoodPrice.Instance);
+                UserControls.FoodPrice.Instance.Dock = DockStyle.Fill;
+                UserControls.FoodPrice.Instance.BringToFront();
+            }
+            else
+                UserControls.FoodPrice.Instance.BringToFront();
+
         }
 
         private void PensionaryButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.PensionerPrice myPensionerPrice = new MainMenuForms.PensionerPrice();
-            myPensionerPrice.Show();
+            if (PanelMainView.Controls.Contains(UserControls.PensionerPrice.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.PensionerPrice.Instance);
+                UserControls.PensionerPrice.Instance.Dock = DockStyle.Fill;
+                UserControls.PensionerPrice.Instance.BringToFront();
+            }
+            else
+                UserControls.PensionerPrice.Instance.BringToFront();
         }
 
         private void VaccineButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.VaccinePrice myVaccinePrice = new MainMenuForms.VaccinePrice();
-            myVaccinePrice.Show();
+            if (PanelMainView.Controls.Contains(UserControls.VaccinePrice.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.VaccinePrice.Instance);
+                UserControls.VaccinePrice.Instance.Dock = DockStyle.Fill;
+                UserControls.VaccinePrice.Instance.BringToFront();
+            }
+            else
+                UserControls.VaccinePrice.Instance.BringToFront();
         }
 
         private void AccesoryButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.AccesoryPrice myAccesoryPrice = new MainMenuForms.AccesoryPrice();
-            myAccesoryPrice.Show();
+            if (PanelMainView.Controls.Contains(UserControls.AccesoryPrice.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.AccesoryPrice.Instance);
+                UserControls.AccesoryPrice.Instance.Dock = DockStyle.Fill;
+                UserControls.AccesoryPrice.Instance.BringToFront();
+            }
+            else
+                UserControls.AccesoryPrice.Instance.BringToFront();
         }
 
         private void SurgeryButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.SurgeryPrice mySurgeryPrice = new MainMenuForms.SurgeryPrice();
-            mySurgeryPrice.Show();
+            if (PanelMainView.Controls.Contains(UserControls.SurgeryPrice.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.SurgeryPrice.Instance);
+                UserControls.SurgeryPrice.Instance.Dock = DockStyle.Fill;
+                UserControls.SurgeryPrice.Instance.BringToFront();
+            }
+            else
+                UserControls.SurgeryPrice.Instance.BringToFront();
         }
 
         private void AllProductsButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.AllPrice myAllPrice = new MainMenuForms.AllPrice();
-            myAllPrice.Show();
+            if (PanelMainView.Controls.Contains(UserControls.AllPrice.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.AllPrice.Instance);
+                UserControls.AllPrice.Instance.Dock = DockStyle.Fill;
+                UserControls.AllPrice.Instance.BringToFront();
+            }
+            else
+                UserControls.AllPrice.Instance.BringToFront();
         }
 
         private void NewStockButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.NewStock myNewStock = new MainMenuForms.NewStock();
-            myNewStock.Show();
+            if (PanelMainView.Controls.Contains(UserControls.NewStock.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.NewStock.Instance);
+                UserControls.NewStock.Instance.Dock = DockStyle.Fill;
+                UserControls.NewStock.Instance.BringToFront();
+            }
+            else
+                UserControls.NewStock.Instance.BringToFront();
         }
 
         private void ModifyStockButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.ModifyStock myModifyStock = new MainMenuForms.ModifyStock();
-            myModifyStock.Show();
+            if (PanelMainView.Controls.Contains(UserControls.ModifyStock.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.ModifyStock.Instance);
+                UserControls.ModifyStock.Instance.Dock = DockStyle.Fill;
+                UserControls.ModifyStock.Instance.BringToFront();
+            }
+            else
+                UserControls.ModifyStock.Instance.BringToFront();
         }
 
         private void SearchStockButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.SearchStock mySearchStock = new MainMenuForms.SearchStock();
-            mySearchStock.Show();
+            if (PanelMainView.Controls.Contains(UserControls.SearchStock.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.SearchStock.Instance);
+                UserControls.SearchStock.Instance.Dock = DockStyle.Fill;
+                UserControls.SearchStock.Instance.BringToFront();
+            }
+            else
+                UserControls.SearchStock.Instance.BringToFront();
         }
 
         private void NewSuppliersButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.NewProvider myNewProvider = new MainMenuForms.NewProvider();
-            myNewProvider.Show();
+            if (PanelMainView.Controls.Contains(UserControls.NewProvider.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.NewProvider.Instance);
+                UserControls.NewProvider.Instance.Dock = DockStyle.Fill;
+                UserControls.NewProvider.Instance.BringToFront();
+            }
+            else
+                UserControls.NewProvider.Instance.BringToFront();
         }
 
         private void SearchSuppliersButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.SearchProvider mySearchProvider = new MainMenuForms.SearchProvider();
-            mySearchProvider.Show();
+            if (PanelMainView.Controls.Contains(UserControls.SearchProvider.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.SearchProvider.Instance);
+                UserControls.SearchProvider.Instance.Dock = DockStyle.Fill;
+                UserControls.SearchProvider.Instance.BringToFront();
+            }
+            else
+                UserControls.SearchProvider.Instance.BringToFront();
         }
 
         private void PrintSuppliersButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.PrintProvider myPrintProvider = new MainMenuForms.PrintProvider();
-            myPrintProvider.Show();
+            if (PanelMainView.Controls.Contains(UserControls.PrintProvider.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.PrintProvider.Instance);
+                UserControls.PrintProvider.Instance.Dock = DockStyle.Fill;
+                UserControls.PrintProvider.Instance.BringToFront();
+            }
+            else
+                UserControls.PrintProvider.Instance.BringToFront();
         }
 
         private void DailyBalanceButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.DailyBalance myDailyBalance = new MainMenuForms.DailyBalance();
-            myDailyBalance.Show();
+            if (PanelMainView.Controls.Contains(UserControls.DailyBalance.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.DailyBalance.Instance);
+                UserControls.DailyBalance.Instance.Dock = DockStyle.Fill;
+                UserControls.DailyBalance.Instance.BringToFront();
+            }
+            else
+                UserControls.DailyBalance.Instance.BringToFront();
         }
 
         private void MonthlyBalanceButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.MonthlyBalance myMonthlyBalance = new MainMenuForms.MonthlyBalance();
-            myMonthlyBalance.Show();
+            if (PanelMainView.Controls.Contains(UserControls.MonthlyBalance.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.MonthlyBalance.Instance);
+                UserControls.MonthlyBalance.Instance.Dock = DockStyle.Fill;
+                UserControls.MonthlyBalance.Instance.BringToFront();
+            }
+            else
+                UserControls.MonthlyBalance.Instance.BringToFront();
         }
 
         private void StaticsSuppliersButton_Click(object sender, EventArgs e)
         {
-            MainMenuForms.StaticsBalance myStaticsBalance = new MainMenuForms.StaticsBalance();
-            myStaticsBalance.Show();
+            if (PanelMainView.Controls.Contains(UserControls.StaticsBalance.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.StaticsBalance.Instance);
+                UserControls.StaticsBalance.Instance.Dock = DockStyle.Fill;
+                UserControls.StaticsBalance.Instance.BringToFront();
+            }
+            else
+                UserControls.StaticsBalance.Instance.BringToFront();
         }
 
         private void NewClient_Click(object sender, EventArgs e)
         {
-            MainMenuForms.NewClient myNewClient = new MainMenuForms.NewClient();
-            myNewClient.Show();
+            if (PanelMainView.Controls.Contains(UserControls.NewClient.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.NewClient.Instance);
+                UserControls.NewClient.Instance.Dock = DockStyle.Fill;
+                UserControls.NewClient.Instance.BringToFront();
+            }
+            else
+                UserControls.NewClient.Instance.BringToFront();
         }
     }
 }
