@@ -27,5 +27,24 @@ namespace Horse.UserControls
         {
             InitializeComponent();
         }
+
+        private void NewClient_Load(object sender, EventArgs e)
+        {
+            txtApellido.Text ="";
+            txtCorreo.Text = "";
+            txtCuit.Text = "";
+            txtDni.Text = "";
+            txtDomicilio.Text = "";
+            txtLocalidad.Text = "";
+            txtNombre.Text = "";
+            txtNombreMascota.Text = "";
+            txtRazonSoc.Text = "";
+            txtTelefono.Text = "";
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

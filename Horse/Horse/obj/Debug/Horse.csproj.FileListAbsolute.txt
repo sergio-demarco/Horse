@@ -44,3 +44,6 @@ C:\Users\Admin\Desktop\Horse\Horse\Horse\bin\Debug\System.Windows.Forms.Ribbon.d
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.NewDocument.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.NewClient.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.Clients.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\bin\Debug\System.Windows.Forms.Ribbon.dll
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.Clients.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.NewClient.resources
