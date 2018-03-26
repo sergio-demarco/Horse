@@ -22,7 +22,7 @@ namespace ConsoleHorse
         public void statusDataBase()
         {
             Program runApp = new Program();
-            int numberSQL = 7;
+            int numberSQL = 8;
             int partialSql = 0;
             try
             {
@@ -45,10 +45,12 @@ namespace ConsoleHorse
                         {
                             Console.WriteLine("La base de datos esta generandose...\n Por favor aguarde...");
                             partialSql = runApp.createDatabase() 
-                                + runApp.querySQL("CREATE TABLE Users (id int not null identity(1,1) primary key,username varchar(25),pass varchar (25),name varchar (30),lastname varchar(30),adress varchar (30),city varchar(30),country varchar (30),phone varchar(30),active bit,isAdmin bit);", "La tabla *Users* se creo correctamente!", "Error al generar la tabla *Users*") 
+                                + runApp.querySQL("CREATE TABLE Users (id int not null identity(1,1) primary key,username varchar(25),pass varchar (25),name varchar (30),lastname varchar(30),adress varchar (30),city varchar(30),country varchar (30),phone varchar(30),active bit,isAdmin bit);", "La tabla *Users* se creo correctamente!", "Error al generar la tabla *Users*")
+                                + runApp.querySQL("CREATE TABLE Clients (id int not null identity(1,1) primary key,name varchar(30),lastname varchar (30),email varchar(30),cuit varchar(30),dni varchar(30),adress varchar(30),location varchar (30),petname varchar(30),razonsoc varchar(30),phone varchar(30));", "La tabla *Clients* se creo correctamente!", "Error al generar la tabla *Clients*")
                                 + runApp.querySQL("CREATE PROCEDURE LoginToHorse @username varchar(25), @pass varchar(25) AS SELECT username,pass FROM Users WHERE username = @username and pass=@pass and active=1 ", "El SP *LoginToHorse* se creo correctamente!", "Error al generar el SP *LoginToHorse*") 
                                 + runApp.querySQL("Insert into Users (username,pass,active,isAdmin) values('admin','admin',1,1);", "Se inserto *admin* a la base de datos correctamente!", "Error al insertar admin en la base de datos") 
-                                + runApp.querySQL("insert into users (username,pass,active,isAdmin) values ('horse','horse',1,1)", "Se inserto *horse* a la base de datos correctamente!", "Error al insertar horse en la base de datos") 
+                                + runApp.querySQL("insert into users (username,pass,active,isAdmin) values ('horse','horse',1,1)", "Se inserto *horse* a la base de datos correctamente!", "Error al insertar horse en la base de datos")
+                               CREATE PROCEDURE InsertClient
                                 + runApp.querySQL("CREATE PROCEDURE [dbo].[IsAdmin] @username varchar(25), @pass varchar(25) AS BEGIN SELECT isAdmin FROM Users WHERE username = @username and pass=@pass END", "El SP *IsAdmin* se creo correctamente!", "Error al generar el SP *IsAdmin* en de datos") 
                                 + runApp.querySQL("CREATE PROCEDURE [dbo].[ResetPassword]    @username varchar(25), @pass varchar(25)  AS BEGIN update Users set pass=@pass where username = @username END", "El SP *ResetPassword* se creo correctamente!", "Error al generar el SP *ResetPassword* en de datos"); 
                             if (partialSql== numberSQL)
