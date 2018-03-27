@@ -29,27 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clients));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataClients = new System.Windows.Forms.DataGridView();
+            this.txtClients = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataClients)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataClients
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 60);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(897, 436);
-            this.dataGridView1.TabIndex = 0;
+            this.dataClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataClients.Location = new System.Drawing.Point(137, 112);
+            this.dataClients.Name = "dataClients";
+            this.dataClients.Size = new System.Drawing.Size(798, 388);
+            this.dataClients.TabIndex = 0;
             // 
-            // textBox1
+            // txtClients
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 19);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(830, 35);
-            this.textBox1.TabIndex = 1;
+            this.txtClients.Location = new System.Drawing.Point(23, 19);
+            this.txtClients.Multiline = true;
+            this.txtClients.Name = "txtClients";
+            this.txtClients.Size = new System.Drawing.Size(830, 35);
+            this.txtClients.TabIndex = 1;
             // 
             // btnSearch
             // 
@@ -59,17 +60,40 @@
             this.btnSearch.Size = new System.Drawing.Size(61, 54);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Nombre",
+            "Apellido",
+            "Correo",
+            "Cuit",
+            "Dni",
+            "Domicilio",
+            "Localidad",
+            "Nombre",
+            "NombreMascota",
+            "RazonSoc",
+            "Telefono"});
+            this.checkedListBox1.Location = new System.Drawing.Point(23, 112);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(108, 169);
+            this.checkedListBox1.TabIndex = 3;
             // 
             // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtClients);
+            this.Controls.Add(this.dataClients);
             this.Name = "Clients";
             this.Size = new System.Drawing.Size(950, 550);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Clients_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataClients)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,8 +101,9 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataClients;
+        private System.Windows.Forms.TextBox txtClients;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }

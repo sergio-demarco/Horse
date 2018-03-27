@@ -27,5 +27,15 @@ namespace Horse.UserControls
         {
             InitializeComponent();
         }
+
+        private void Clients_Load(object sender, EventArgs e)
+        {
+            txtClients.Focus();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Horse.UserControls
 {
@@ -30,21 +31,84 @@ namespace Horse.UserControls
 
         private void NewClient_Load(object sender, EventArgs e)
         {
-            txtApellido.Text ="";
+            txtNombre.Focus();
+            txtApellido.Text = "";
             txtCorreo.Text = "";
-            txtCuit.Text = "";
+            txtCuit.Text = "NO POSEE";
             txtDni.Text = "";
             txtDomicilio.Text = "";
             txtLocalidad.Text = "";
             txtNombre.Text = "";
             txtNombreMascota.Text = "";
-            txtRazonSoc.Text = "";
+            txtRazonSoc.Text = "NO POSEE";
             txtTelefono.Text = "";
+            
+            lblErrorNewClient.Visible = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (txtApellido.Text != "" && txtCorreo.Text != "" && txtCuit.Text != "" && txtDni.Text != "" && txtDomicilio.Text != "" && txtLocalidad.Text != "" && txtNombre.Text != "" && txtNombreMascota.Text != "" && txtRazonSoc.Text != "" && txtTelefono.Text != "")
+            {
+                try
+                {
+                    Class.LoginController MyConnection = new Class.LoginController();
+                    SqlConnection connection = MyConnection.getConnection();
 
+                    int count = 0;
+                    using (var command = new SqlCommand("LoginToHorse", connection))
+                    {
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        command.Connection.Open();
+                        command.Parameters.AddWithValue("@name", txtNombre.Text);
+                        command.Parameters.AddWithValue("@lastname", txtApellido.Text);
+                        command.Parameters.AddWithValue("@email", txtCorreo.Text);
+                        command.Parameters.AddWithValue("@cuit", txtCuit.Text);
+                        command.Parameters.AddWithValue("@dni", txtDni.Text);
+                        command.Parameters.AddWithValue("@adress", txtDomicilio.Text);
+                        command.Parameters.AddWithValue("@location", txtLocalidad.Text);
+                        command.Parameters.AddWithValue("@petname", txtNombreMascota.Text);
+                        command.Parameters.AddWithValue("@razonsoc", txtRazonSoc.Text);
+                        command.Parameters.AddWithValue("@phone", txtTelefono.Text);
+
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                count++;
+                            }
+                            if (count > 0)
+                            {
+                                txtApellido.Text = "";
+                                txtCorreo.Text = "";
+                                txtCuit.Text = "NO POSEE";
+                                txtDni.Text = "";
+                                txtDomicilio.Text = "";
+                                txtLocalidad.Text = "";
+                                txtNombre.Text = "";
+                                txtNombreMascota.Text = "";
+                                txtRazonSoc.Text = "NO POSEE";
+                                txtTelefono.Text = "";
+                            }
+                            else
+                            {
+
+                            }
+
+                        }
+                    }
+
+                }
+                catch
+                {
+
+
+                }
+            }
+            else
+            {
+                lblErrorNewClient.Visible = true;
+            }
         }
     }
 }
