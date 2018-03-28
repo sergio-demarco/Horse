@@ -35,7 +35,47 @@ namespace Horse.UserControls
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            string query = "select ";
+            if (checkCorreo.Checked == true)
+            {
+                query = query+"";
+            }
+            if(checkCuit.Checked == true)
+            {
+                query = query+"";
+            }
+            if (checkDni.Checked == true)
+            {
+                query = query+"";
+            }
+            if (checkDomicilio.Checked == true)
+            {
+                query = query+"";
+            }
+            if (checkLocalidad.Checked == true)
+            {
+                query = query+"";
+            }
+            if (checkNombre.Checked == true)
+            {
+                query = query+"";
+            }
+            if (checkNombreMascota.Checked == true)
+            {
+                query = query+"";
+            }
+            if (checkRazSocial.Checked == true)
+            {
+                query = query+"";
+            }
+            if (checkTelefono.Checked == true)
+            {
+                query = query+"";
+            }
+            if (checkApellido.Checked == true)
+            {
+                query = query+"";
+            }
         }
 
 
