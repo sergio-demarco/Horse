@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Horse.UserControls
 {
@@ -35,47 +36,115 @@ namespace Horse.UserControls
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string query = "select ";
-            if (checkCorreo.Checked == true)
-            {
-                query = query+"";
-            }
-            if(checkCuit.Checked == true)
-            {
-                query = query+"";
-            }
-            if (checkDni.Checked == true)
-            {
-                query = query+"";
-            }
-            if (checkDomicilio.Checked == true)
-            {
-                query = query+"";
-            }
-            if (checkLocalidad.Checked == true)
-            {
-                query = query+"";
-            }
+            string query = "select id ";
+            string where1="";
+            string where2="";
+            string where3="";
+            string where4="";
+            string where5="";
+            string where6="";
+            string where7="";
+            string where8="";
+            string where9="";
+            string where10="";
+            string clientSearch = "";
+            int flag = 0;
+            if (txtClients == null) { clientSearch = ""; } else { clientSearch = txtClients.Text; }
             if (checkNombre.Checked == true)
             {
-                query = query+"";
-            }
-            if (checkNombreMascota.Checked == true)
-            {
-                query = query+"";
-            }
-            if (checkRazSocial.Checked == true)
-            {
-                query = query+"";
-            }
-            if (checkTelefono.Checked == true)
-            {
-                query = query+"";
+                flag = 1;
+                query = query + ",name";
+                where1 = where1 + " name like'%" + clientSearch+"%'";
             }
             if (checkApellido.Checked == true)
             {
-                query = query+"";
+                flag = 1;
+                query = query + ",lastname";
+                where2 = where2 + "lastname like'%" + clientSearch + "%'";
             }
+            if (checkCorreo.Checked == true)
+            {
+                flag = 1;
+                query = query + ",email";
+                where3 = where3 + "email like'%" + clientSearch + "%'";
+            }
+            if (checkCuit.Checked == true)
+            {
+                flag = 1;
+                query = query + ",cuit";
+                where4 = where4 + "cuit like'%" + clientSearch + "%'";
+            }
+            if (checkDni.Checked == true)
+            {
+                flag = 1;
+                query = query + ",dni";
+                where5 = where5 + "dni like'%" + clientSearch + "%'";
+            }
+            if (checkDomicilio.Checked == true)
+            {
+                flag = 1;
+                query = query + ",adress";
+                where6 = where6 + "adress like'%" + clientSearch + "%'";
+            }
+            if (checkLocalidad.Checked == true)
+            {
+                flag = 1;
+                query = query + ",location";
+                where7 = where7 + "location like'%" + clientSearch + "%'";
+            }
+            
+            if (checkNombreMascota.Checked == true)
+            {
+                flag = 1;
+                query = query + ",petname";
+                where8 = where8 + "petname like'%" + clientSearch + "%'";
+            }
+            if (checkRazSocial.Checked == true)
+            {
+                flag = 1;
+                query = query + ",razonsoc";
+                where9 = where9 + "razonsoc like'%" + clientSearch + "%'";
+            }
+            if (checkTelefono.Checked == true)
+            {
+                flag = 1;
+                query = query + ",phone";
+                where10 = where10 + "phone like'%" + clientSearch + "%'";
+            }
+            if (flag == 0)
+            {
+                query = "Select id, name,lastname,email,cuit,dni,adress,location,petname,razonsoc,phone from Clients";
+            }
+            else
+            {
+                query = query + " from Clients where " + where1 +" and "+ where2 + " and " + where3 + " and " + where4 + " and " + where5 + " and " + where6 + " and " + where7 + " and " + where8 + " and " + where9 + " and " + where10;
+            }
+
+
+            try
+            {
+                Class.LoginController MyConnection = new Class.LoginController();
+                SqlConnection connection = MyConnection.getConnection();
+
+                SqlCommand sqlCmd = new SqlCommand();
+                sqlCmd.Connection = connection;
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.CommandText = query;
+                SqlDataAdapter sqlDataAdap = new SqlDataAdapter(sqlCmd);
+
+                DataTable dtRecord = new DataTable();
+                sqlDataAdap.Fill(dtRecord);
+                dataClients.DataSource = dtRecord;
+
+            }
+            catch
+            {
+
+
+            }
+
+           
+
         }
 
 
