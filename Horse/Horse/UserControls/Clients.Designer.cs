@@ -42,16 +42,41 @@
             this.checkRazSocial = new System.Windows.Forms.CheckBox();
             this.checkTelefono = new System.Windows.Forms.CheckBox();
             this.checkDomicilio = new System.Windows.Forms.CheckBox();
+            this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cuit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razonsoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataClients)).BeginInit();
             this.SuspendLayout();
             // 
             // dataClients
             // 
+            this.dataClients.AllowUserToAddRows = false;
             this.dataClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Editar,
+            this.id,
+            this.name,
+            this.lastname,
+            this.email,
+            this.cuit,
+            this.dni,
+            this.adress,
+            this.petname,
+            this.razonsoc,
+            this.phone});
             this.dataClients.Location = new System.Drawing.Point(23, 83);
             this.dataClients.Name = "dataClients";
             this.dataClients.Size = new System.Drawing.Size(897, 464);
             this.dataClients.TabIndex = 0;
+            this.dataClients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataClients_CellClick);
             // 
             // txtClients
             // 
@@ -191,6 +216,76 @@
             this.checkDomicilio.Text = "Domicilio";
             this.checkDomicilio.UseVisualStyleBackColor = true;
             // 
+            // Editar
+            // 
+            this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Editar.HeaderText = "";
+            this.Editar.Name = "Editar";
+            this.Editar.Text = "Editar";
+            this.Editar.UseColumnTextForButtonValue = true;
+            this.Editar.Width = 5;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "name";
+            this.name.Name = "name";
+            // 
+            // lastname
+            // 
+            this.lastname.DataPropertyName = "lastname";
+            this.lastname.HeaderText = "lastname";
+            this.lastname.Name = "lastname";
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "email";
+            this.email.Name = "email";
+            // 
+            // cuit
+            // 
+            this.cuit.DataPropertyName = "cuit";
+            this.cuit.HeaderText = "cuit";
+            this.cuit.Name = "cuit";
+            // 
+            // dni
+            // 
+            this.dni.DataPropertyName = "dni";
+            this.dni.HeaderText = "dni";
+            this.dni.Name = "dni";
+            // 
+            // adress
+            // 
+            this.adress.DataPropertyName = "adress";
+            this.adress.HeaderText = "adress";
+            this.adress.Name = "adress";
+            // 
+            // petname
+            // 
+            this.petname.DataPropertyName = "petname";
+            this.petname.HeaderText = "petname";
+            this.petname.Name = "petname";
+            // 
+            // razonsoc
+            // 
+            this.razonsoc.DataPropertyName = "razonsoc";
+            this.razonsoc.HeaderText = "razonsoc";
+            this.razonsoc.Name = "razonsoc";
+            // 
+            // phone
+            // 
+            this.phone.DataPropertyName = "phone";
+            this.phone.HeaderText = "phone";
+            this.phone.Name = "phone";
+            // 
             // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,5 +327,16 @@
         private System.Windows.Forms.CheckBox checkRazSocial;
         private System.Windows.Forms.CheckBox checkTelefono;
         private System.Windows.Forms.CheckBox checkDomicilio;
+        private System.Windows.Forms.DataGridViewButtonColumn Editar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cuit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dni;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn razonsoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
     }
 }

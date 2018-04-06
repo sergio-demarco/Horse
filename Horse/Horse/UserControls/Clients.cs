@@ -134,7 +134,24 @@ namespace Horse.UserControls
 
                 DataTable dtRecord = new DataTable();
                 sqlDataAdap.Fill(dtRecord);
+                dataClients.AutoGenerateColumns = false;
                 dataClients.DataSource = dtRecord;
+
+                //DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
+                //{
+                //    buttons.HeaderText = "";
+                //    buttons.Text = "Editar";
+                //    buttons.UseColumnTextForButtonValue = true;
+                //    buttons.AutoSizeMode =
+                //        DataGridViewAutoSizeColumnMode.AllCells;
+                //    buttons.FlatStyle = FlatStyle.Standard;
+                //    buttons.CellTemplate.Style.BackColor = Color.Honeydew;
+                //    buttons.DisplayIndex = 0;
+                //}
+
+                //dataClients.Columns.Add(buttons);
+
+
 
             }
             catch
@@ -147,6 +164,12 @@ namespace Horse.UserControls
 
         }
 
-
+        private void dataClients_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (this.dataClients.Columns[e.ColumnIndex].Name.Equals("Editar"))
+            {
+                //Aqui va el code que quieres que realize
+            }
+        }
     }
 }
