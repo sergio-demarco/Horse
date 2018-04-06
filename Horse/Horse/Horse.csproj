@@ -284,6 +284,9 @@
     <EmbeddedResource Include="UserControls\Clients.resx">
       <DependentUpon>Clients.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ModifyClients.resx">
+      <DependentUpon>ModifyClients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\NewClient.resx">
       <DependentUpon>NewClient.cs</DependentUpon>
     </EmbeddedResource>

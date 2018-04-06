@@ -168,7 +168,19 @@ namespace Horse.UserControls
         {
             if (this.dataClients.Columns[e.ColumnIndex].Name.Equals("Editar"))
             {
-                //Aqui va el code que quieres que realize
+                string name = this.dataClients.Columns[1].ToString();
+                string lastname = this.dataClients.Columns[2].ToString();
+                string email = this.dataClients.Columns[3].ToString();
+                string cuit = this.dataClients.Columns[4].ToString();
+                string dni = this.dataClients.Columns[5].ToString();
+                string adress = this.dataClients.Columns[6].ToString();
+                string location = this.dataClients.Columns[7].ToString();
+                string petname = this.dataClients.Columns[8].ToString();
+                string razonsoc = this.dataClients.Columns[9].ToString();
+                string phone = this.dataClients.Columns[10].ToString();
+
+                MainView mainView = new MainView();
+                mainView.OpenModifyCliente(name, lastname, email, cuit, dni, adress, location, petname, razonsoc, phone);
             }
         }
     }

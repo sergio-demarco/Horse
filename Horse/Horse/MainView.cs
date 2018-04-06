@@ -200,7 +200,7 @@ namespace Horse
                 UserControls.NewStock.Instance.BringToFront();
         }
 
-        private void ModifyStockButton_Click(object sender, EventArgs e)
+        public void ModifyStockButton_Click(object sender, EventArgs e)
         {
             if (!PanelMainView.Controls.Contains(UserControls.ModifyStock.Instance))
             {
@@ -315,6 +315,22 @@ namespace Horse
             }
             else
                 UserControls.NewClient.Instance.BringToFront();
+        }
+        public void OpenModifyCliente(string name, string lastname, string email, string cuit, string dni, string adress, string location, string petname, string razonsoc, string phone)
+        {
+            UserControls.Clients.Instance.Hide();
+            UserControls.ModifyClients.Instance.BringToFront();
+            //PanelMainView.Controls.Clear();
+            //PanelMainView.Controls.Add(new UserControls.ModifyClients());
+            //if (!PanelMainView.Controls.Contains(UserControls.ModifyClients.Instance))
+            //{
+
+            //    PanelMainView.Controls.Add(UserControls.ModifyClients.Instance);
+            //    UserControls.ModifyClients.Instance.Dock = DockStyle.Fill;
+            //    UserControls.ModifyClients.Instance.BringToFront();
+            //}
+            //else
+            //    UserControls.ModifyClients.Instance.BringToFront();
         }
     }
 }
