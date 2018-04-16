@@ -50,6 +50,7 @@
             this.cuit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.location = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.petname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razonsoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +70,7 @@
             this.cuit,
             this.dni,
             this.adress,
+            this.location,
             this.petname,
             this.razonsoc,
             this.phone});
@@ -268,6 +270,12 @@
             this.adress.HeaderText = "adress";
             this.adress.Name = "adress";
             // 
+            // location
+            // 
+            this.location.DataPropertyName = "location";
+            this.location.HeaderText = "location";
+            this.location.Name = "location";
+            // 
             // petname
             // 
             this.petname.DataPropertyName = "petname";
@@ -335,6 +343,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cuit;
         private System.Windows.Forms.DataGridViewTextBoxColumn dni;
         private System.Windows.Forms.DataGridViewTextBoxColumn adress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn location;
         private System.Windows.Forms.DataGridViewTextBoxColumn petname;
         private System.Windows.Forms.DataGridViewTextBoxColumn razonsoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn phone;

@@ -182,9 +182,9 @@ namespace Horse.UserControls
                 string location = row.Cells[8].Value.ToString();
                 string petname = row.Cells[9].Value.ToString();
                 string razonsoc = row.Cells[10].Value.ToString();
-             //   string phone = row.Cells[11].Value.ToString();
+                string phone = row.Cells[11].Value.ToString();
 
-                Class.Clients cliente = new Class.Clients(id, name, lastname, email, cuit, dni, adress, location, petname, razonsoc);
+                Class.Clients cliente = new Class.Clients(id, name, lastname, email, cuit, dni, adress, location, petname, razonsoc,phone);
 
                 Forms.ModifyClient modifyClient = new Forms.ModifyClient(cliente);
                 modifyClient.Show();

@@ -37,7 +37,7 @@ namespace Horse.Class
 
         }
 
-        public Clients(string id, string name, string lastname, string email, string cuit, string dni, string adress, string location, string petname, string razonsoc)
+        public Clients(string id, string name, string lastname, string email, string cuit, string dni, string adress, string location, string petname, string razonsoc, string phone)
         {
             Id = id;
             Name = name;
@@ -49,7 +49,7 @@ namespace Horse.Class
             Location = location;
             Petname = petname;
             Razonsoc = razonsoc;
-            //Phone = phone;
+            Phone = phone;
         }
     }
 }
