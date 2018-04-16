@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace Horse.UserControls
 {
     public partial class Clients : UserControl
@@ -37,16 +38,16 @@ namespace Horse.UserControls
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string query = "select id ";
-            string where1="";
-            string where2="";
-            string where3="";
-            string where4="";
-            string where5="";
-            string where6="";
-            string where7="";
-            string where8="";
-            string where9="";
-            string where10="";
+            string where1 = "";
+            string where2 = "";
+            string where3 = "";
+            string where4 = "";
+            string where5 = "";
+            string where6 = "";
+            string where7 = "";
+            string where8 = "";
+            string where9 = "";
+            string where10 = "";
             string clientSearch = "";
             int flag = 0;
             if (txtClients == null) { clientSearch = ""; } else { clientSearch = txtClients.Text; }
@@ -54,7 +55,7 @@ namespace Horse.UserControls
             {
                 flag = 1;
                 query = query + ",name";
-                where1 = where1 + " name like'%" + clientSearch+"%'";
+                where1 = where1 + " name like'%" + clientSearch + "%'";
             }
             if (checkApellido.Checked == true)
             {
@@ -92,7 +93,7 @@ namespace Horse.UserControls
                 query = query + ",location";
                 where7 = where7 + "location like'%" + clientSearch + "%'";
             }
-            
+
             if (checkNombreMascota.Checked == true)
             {
                 flag = 1;
@@ -117,7 +118,7 @@ namespace Horse.UserControls
             }
             else
             {
-                query = query + " from Clients where " + where1 +" and "+ where2 + " and " + where3 + " and " + where4 + " and " + where5 + " and " + where6 + " and " + where7 + " and " + where8 + " and " + where9 + " and " + where10;
+                query = query + " from Clients where " + where1 + " and " + where2 + " and " + where3 + " and " + where4 + " and " + where5 + " and " + where6 + " and " + where7 + " and " + where8 + " and " + where9 + " and " + where10;
             }
 
 
@@ -160,7 +161,7 @@ namespace Horse.UserControls
 
             }
 
-           
+
 
         }
 
@@ -168,7 +169,25 @@ namespace Horse.UserControls
         {
             if (this.dataClients.Columns[e.ColumnIndex].Name.Equals("Editar"))
             {
-                //Aqui va el code que quieres que realize
+                DataGridViewRow row = this.dataClients.Rows[e.RowIndex];
+
+
+                string id = row.Cells[1].Value.ToString();
+                string name = row.Cells[2].Value.ToString();
+                string lastname = row.Cells[3].Value.ToString();
+                string email = row.Cells[4].Value.ToString();
+                string cuit = row.Cells[5].Value.ToString();
+                string dni = row.Cells[6].Value.ToString();
+                string adress = row.Cells[7].Value.ToString();
+                string location = row.Cells[8].Value.ToString();
+                string petname = row.Cells[9].Value.ToString();
+                string razonsoc = row.Cells[10].Value.ToString();
+             //   string phone = row.Cells[11].Value.ToString();
+
+                Class.Clients cliente = new Class.Clients(id, name, lastname, email, cuit, dni, adress, location, petname, razonsoc);
+
+                Forms.ModifyClient modifyClient = new Forms.ModifyClient(cliente);
+                modifyClient.Show();
             }
         }
     }

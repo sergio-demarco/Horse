@@ -27,5 +27,11 @@ namespace Horse.UserControls
         {
             InitializeComponent();
         }
+        public UserControl modifyClie()
+        {
+            InitializeComponent();
+            _instance = new ModifyClients();
+            return _instance;
+        }
     }
 }

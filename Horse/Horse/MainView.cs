@@ -316,5 +316,17 @@ namespace Horse
             else
                 UserControls.NewClient.Instance.BringToFront();
         }
+
+        public void ModifyClient()
+        {
+            //PanelMainView.Controls.Add(new UserControls.ModifyClients().modifyClie());
+            UserControls.ModifyClients ctrlMyControl = new UserControls.ModifyClients();
+
+            //PanelMainView.Controls.Add(ctrlMyControl);
+
+            PanelMainView.Controls.Add(ctrlMyControl.modifyClie());
+            UserControls.ModifyClients.Instance.Dock = DockStyle.Fill;
+            UserControls.ModifyClients.Instance.BringToFront();
+        } 
     }
 }
