@@ -52,6 +52,8 @@
             this.lblNombreMascota = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblErrorNewClient = new System.Windows.Forms.Label();
+            this.txtPhone2 = new System.Windows.Forms.TextBox();
+            this.lblPhone2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,11 +63,8 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.27572F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.72428F));
-            this.tableLayoutPanel1.Controls.Add(this.txtCuit, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.txtRazonSoc, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.txtCorreo, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.txtLocalidad, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.txtDomicilio, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lblPhone2, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txtPhone2, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.txtTelefono, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtNombreMascota, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.txtDni, 1, 2);
@@ -75,15 +74,20 @@
             this.tableLayoutPanel1.Controls.Add(this.lblApellido, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblDni, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblTelefono, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lblDomicilio, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.lblLocalidad, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.lblCorreo, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.lblCUIT, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.lblRazonSoc, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.lblNombreMascota, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblCUIT, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.txtCuit, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.txtRazonSoc, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.lblRazonSoc, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.txtCorreo, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.lblCorreo, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.txtLocalidad, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.lblLocalidad, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.lblDomicilio, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.txtDomicilio, 1, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 32);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
@@ -93,15 +97,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(908, 364);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(908, 395);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // txtCuit
             // 
             this.txtCuit.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtCuit.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtCuit.Location = new System.Drawing.Point(286, 329);
+            this.txtCuit.Location = new System.Drawing.Point(286, 365);
             this.txtCuit.Name = "txtCuit";
             this.txtCuit.Size = new System.Drawing.Size(619, 29);
             this.txtCuit.TabIndex = 31;
@@ -110,7 +116,7 @@
             // 
             this.txtRazonSoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtRazonSoc.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtRazonSoc.Location = new System.Drawing.Point(286, 291);
+            this.txtRazonSoc.Location = new System.Drawing.Point(286, 328);
             this.txtRazonSoc.Name = "txtRazonSoc";
             this.txtRazonSoc.Size = new System.Drawing.Size(619, 29);
             this.txtRazonSoc.TabIndex = 30;
@@ -119,7 +125,7 @@
             // 
             this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtCorreo.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtCorreo.Location = new System.Drawing.Point(286, 255);
+            this.txtCorreo.Location = new System.Drawing.Point(286, 291);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(619, 29);
             this.txtCorreo.TabIndex = 29;
@@ -128,7 +134,7 @@
             // 
             this.txtLocalidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtLocalidad.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtLocalidad.Location = new System.Drawing.Point(286, 218);
+            this.txtLocalidad.Location = new System.Drawing.Point(286, 255);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(619, 29);
             this.txtLocalidad.TabIndex = 28;
@@ -137,7 +143,7 @@
             // 
             this.txtDomicilio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtDomicilio.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtDomicilio.Location = new System.Drawing.Point(286, 181);
+            this.txtDomicilio.Location = new System.Drawing.Point(286, 218);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(619, 29);
             this.txtDomicilio.TabIndex = 27;
@@ -236,7 +242,7 @@
             this.lblDomicilio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDomicilio.AutoSize = true;
             this.lblDomicilio.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblDomicilio.Location = new System.Drawing.Point(3, 184);
+            this.lblDomicilio.Location = new System.Drawing.Point(3, 221);
             this.lblDomicilio.Name = "lblDomicilio";
             this.lblDomicilio.Size = new System.Drawing.Size(76, 23);
             this.lblDomicilio.TabIndex = 8;
@@ -247,7 +253,7 @@
             this.lblLocalidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblLocalidad.AutoSize = true;
             this.lblLocalidad.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblLocalidad.Location = new System.Drawing.Point(3, 221);
+            this.lblLocalidad.Location = new System.Drawing.Point(3, 258);
             this.lblLocalidad.Name = "lblLocalidad";
             this.lblLocalidad.Size = new System.Drawing.Size(82, 23);
             this.lblLocalidad.TabIndex = 17;
@@ -258,7 +264,7 @@
             this.lblCorreo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblCorreo.Location = new System.Drawing.Point(3, 258);
+            this.lblCorreo.Location = new System.Drawing.Point(3, 294);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(142, 23);
             this.lblCorreo.TabIndex = 18;
@@ -269,7 +275,7 @@
             this.lblCUIT.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblCUIT.AutoSize = true;
             this.lblCUIT.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblCUIT.Location = new System.Drawing.Point(3, 332);
+            this.lblCUIT.Location = new System.Drawing.Point(3, 367);
             this.lblCUIT.Name = "lblCUIT";
             this.lblCUIT.Size = new System.Drawing.Size(124, 23);
             this.lblCUIT.TabIndex = 20;
@@ -280,7 +286,7 @@
             this.lblRazonSoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblRazonSoc.AutoSize = true;
             this.lblRazonSoc.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblRazonSoc.Location = new System.Drawing.Point(3, 294);
+            this.lblRazonSoc.Location = new System.Drawing.Point(3, 331);
             this.lblRazonSoc.Name = "lblRazonSoc";
             this.lblRazonSoc.Size = new System.Drawing.Size(182, 23);
             this.lblRazonSoc.TabIndex = 19;
@@ -323,6 +329,26 @@
             this.lblErrorNewClient.TabIndex = 2;
             this.lblErrorNewClient.Text = "**Todos los campos deben ser completados**";
             this.lblErrorNewClient.Visible = false;
+            // 
+            // txtPhone2
+            // 
+            this.txtPhone2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtPhone2.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.txtPhone2.Location = new System.Drawing.Point(286, 181);
+            this.txtPhone2.Name = "txtPhone2";
+            this.txtPhone2.Size = new System.Drawing.Size(619, 29);
+            this.txtPhone2.TabIndex = 32;
+            // 
+            // lblPhone2
+            // 
+            this.lblPhone2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblPhone2.AutoSize = true;
+            this.lblPhone2.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.lblPhone2.Location = new System.Drawing.Point(3, 184);
+            this.lblPhone2.Name = "lblPhone2";
+            this.lblPhone2.Size = new System.Drawing.Size(74, 23);
+            this.lblPhone2.TabIndex = 33;
+            this.lblPhone2.Text = "Telefono:";
             // 
             // NewClient
             // 
@@ -367,5 +393,7 @@
         private System.Windows.Forms.Label lblNombreMascota;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblErrorNewClient;
+        private System.Windows.Forms.Label lblPhone2;
+        private System.Windows.Forms.TextBox txtPhone2;
     }
 }

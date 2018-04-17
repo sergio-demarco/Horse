@@ -54,6 +54,8 @@
             this.petname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razonsoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.checkPhone2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataClients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +75,8 @@
             this.location,
             this.petname,
             this.razonsoc,
-            this.phone});
+            this.phone,
+            this.phone2});
             this.dataClients.Location = new System.Drawing.Point(23, 83);
             this.dataClients.Name = "dataClients";
             this.dataClients.Size = new System.Drawing.Size(897, 464);
@@ -127,7 +130,7 @@
             this.checkCorreo.AutoSize = true;
             this.checkCorreo.Checked = true;
             this.checkCorreo.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkCorreo.Location = new System.Drawing.Point(542, 60);
+            this.checkCorreo.Location = new System.Drawing.Point(616, 60);
             this.checkCorreo.Name = "checkCorreo";
             this.checkCorreo.Size = new System.Drawing.Size(57, 17);
             this.checkCorreo.TabIndex = 6;
@@ -139,7 +142,7 @@
             this.checkCuit.AutoSize = true;
             this.checkCuit.Checked = true;
             this.checkCuit.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkCuit.Location = new System.Drawing.Point(700, 60);
+            this.checkCuit.Location = new System.Drawing.Point(774, 60);
             this.checkCuit.Name = "checkCuit";
             this.checkCuit.Size = new System.Drawing.Size(44, 17);
             this.checkCuit.TabIndex = 7;
@@ -163,7 +166,7 @@
             this.checkLocalidad.AutoSize = true;
             this.checkLocalidad.Checked = true;
             this.checkLocalidad.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkLocalidad.Location = new System.Drawing.Point(470, 60);
+            this.checkLocalidad.Location = new System.Drawing.Point(544, 60);
             this.checkLocalidad.Name = "checkLocalidad";
             this.checkLocalidad.Size = new System.Drawing.Size(72, 17);
             this.checkLocalidad.TabIndex = 9;
@@ -187,7 +190,7 @@
             this.checkRazSocial.AutoSize = true;
             this.checkRazSocial.Checked = true;
             this.checkRazSocial.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkRazSocial.Location = new System.Drawing.Point(605, 60);
+            this.checkRazSocial.Location = new System.Drawing.Point(679, 60);
             this.checkRazSocial.Name = "checkRazSocial";
             this.checkRazSocial.Size = new System.Drawing.Size(89, 17);
             this.checkRazSocial.TabIndex = 11;
@@ -211,7 +214,7 @@
             this.checkDomicilio.AutoSize = true;
             this.checkDomicilio.Checked = true;
             this.checkDomicilio.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkDomicilio.Location = new System.Drawing.Point(396, 60);
+            this.checkDomicilio.Location = new System.Drawing.Point(470, 60);
             this.checkDomicilio.Name = "checkDomicilio";
             this.checkDomicilio.Size = new System.Drawing.Size(68, 17);
             this.checkDomicilio.TabIndex = 13;
@@ -294,10 +297,29 @@
             this.phone.HeaderText = "phone";
             this.phone.Name = "phone";
             // 
+            // phone2
+            // 
+            this.phone2.DataPropertyName = "phone2";
+            this.phone2.HeaderText = "phone2";
+            this.phone2.Name = "phone2";
+            // 
+            // checkPhone2
+            // 
+            this.checkPhone2.AutoSize = true;
+            this.checkPhone2.Checked = true;
+            this.checkPhone2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkPhone2.Location = new System.Drawing.Point(396, 60);
+            this.checkPhone2.Name = "checkPhone2";
+            this.checkPhone2.Size = new System.Drawing.Size(74, 17);
+            this.checkPhone2.TabIndex = 14;
+            this.checkPhone2.Text = "Telefono2";
+            this.checkPhone2.UseVisualStyleBackColor = true;
+            // 
             // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkPhone2);
             this.Controls.Add(this.checkDomicilio);
             this.Controls.Add(this.checkTelefono);
             this.Controls.Add(this.checkRazSocial);
@@ -347,5 +369,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn petname;
         private System.Windows.Forms.DataGridViewTextBoxColumn razonsoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone2;
+        private System.Windows.Forms.CheckBox checkPhone2;
     }
 }

@@ -19,6 +19,7 @@ namespace Horse.Class
         private string petname = string.Empty;
         private string razonsoc = string.Empty;
         private string phone = string.Empty;
+        private string phone2 = string.Empty;
 
         public string Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
@@ -31,13 +32,14 @@ namespace Horse.Class
         public string Petname { get => petname; set => petname = value; }
         public string Razonsoc { get => razonsoc; set => razonsoc = value; }
         public string Phone { get => phone; set => phone = value; }
+        public string Phone2 { get => phone2; set => phone2 = value; }
 
         public Clients()
         {
 
         }
 
-        public Clients(string id, string name, string lastname, string email, string cuit, string dni, string adress, string location, string petname, string razonsoc, string phone)
+        public Clients(string id, string name, string lastname, string email, string cuit, string dni, string adress, string location, string petname, string razonsoc, string phone, string phone2)
         {
             Id = id;
             Name = name;
@@ -50,6 +52,7 @@ namespace Horse.Class
             Petname = petname;
             Razonsoc = razonsoc;
             Phone = phone;
+            Phone2 = phone2;
         }
     }
 }

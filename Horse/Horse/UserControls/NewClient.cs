@@ -42,13 +42,14 @@ namespace Horse.UserControls
             txtNombreMascota.Text = "";
             txtRazonSoc.Text = "NO POSEE";
             txtTelefono.Text = "";
-            
+            txtPhone2.Text = "";
+
             lblErrorNewClient.Visible = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (txtApellido.Text != "" && txtCorreo.Text != "" && txtCuit.Text != "" && txtDni.Text != "" && txtDomicilio.Text != "" && txtLocalidad.Text != "" && txtNombre.Text != "" && txtNombreMascota.Text != "" && txtRazonSoc.Text != "" && txtTelefono.Text != "")
+            if (txtApellido.Text != "" && txtCorreo.Text != "" && txtCuit.Text != "" && txtDni.Text != "" && txtDomicilio.Text != "" && txtLocalidad.Text != "" && txtNombre.Text != "" && txtNombreMascota.Text != "" && txtRazonSoc.Text != "" && txtTelefono.Text != "" && txtPhone2.Text != "")
             {
                 try
                 {
@@ -56,7 +57,7 @@ namespace Horse.UserControls
                     SqlConnection connection = MyConnection.getConnection();
 
                     int count = 0;
-                    using (var command = new SqlCommand("LoginToHorse", connection))
+                    using (var command = new SqlCommand("InsertClient", connection))
                     {
                         command.CommandType = System.Data.CommandType.StoredProcedure;
                         command.Connection.Open();
@@ -70,6 +71,7 @@ namespace Horse.UserControls
                         command.Parameters.AddWithValue("@petname", txtNombreMascota.Text);
                         command.Parameters.AddWithValue("@razonsoc", txtRazonSoc.Text);
                         command.Parameters.AddWithValue("@phone", txtTelefono.Text);
+                        command.Parameters.AddWithValue("@phone2", txtPhone2.Text);
 
                         using (var reader = command.ExecuteReader())
                         {
@@ -89,6 +91,7 @@ namespace Horse.UserControls
                                 txtNombreMascota.Text = "";
                                 txtRazonSoc.Text = "NO POSEE";
                                 txtTelefono.Text = "";
+                                txtPhone2.Text = "";
                             }
                             else
                             {

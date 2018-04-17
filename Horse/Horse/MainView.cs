@@ -40,20 +40,6 @@ namespace Horse
                 UserControls.Clients.Instance.BringToFront();
         }
 
-        private void EditClientButton_Click(object sender, EventArgs e)
-        {
-            if (!PanelMainView.Controls.Contains(UserControls.ModifyClients.Instance))
-            {
-
-                PanelMainView.Controls.Add(UserControls.ModifyClients.Instance);
-                UserControls.ModifyClients.Instance.Dock = DockStyle.Fill;
-                UserControls.ModifyClients.Instance.BringToFront();
-            }
-            else
-                UserControls.ModifyClients.Instance.BringToFront();
-
-        }
-
         private void CalendarButton_Click(object sender, EventArgs e)
         {
             if (!PanelMainView.Controls.Contains(UserControls.CalendarClients.Instance))
@@ -317,16 +303,5 @@ namespace Horse
                 UserControls.NewClient.Instance.BringToFront();
         }
 
-        public void ModifyClient()
-        {
-            //PanelMainView.Controls.Add(new UserControls.ModifyClients().modifyClie());
-            UserControls.ModifyClients ctrlMyControl = new UserControls.ModifyClients();
-
-            //PanelMainView.Controls.Add(ctrlMyControl);
-
-            PanelMainView.Controls.Add(ctrlMyControl.modifyClie());
-            UserControls.ModifyClients.Instance.Dock = DockStyle.Fill;
-            UserControls.ModifyClients.Instance.BringToFront();
-        } 
     }
 }

@@ -34,8 +34,6 @@
             this.NewClient = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.ClientsButton = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
-            this.EditClientButton = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel4 = new System.Windows.Forms.RibbonPanel();
             this.CalendarButton = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel16 = new System.Windows.Forms.RibbonPanel();
@@ -98,7 +96,6 @@
             this.ClientsTab.Name = "ClientsTab";
             this.ClientsTab.Panels.Add(this.ribbonPanel22);
             this.ClientsTab.Panels.Add(this.ribbonPanel2);
-            this.ClientsTab.Panels.Add(this.ribbonPanel3);
             this.ClientsTab.Panels.Add(this.ribbonPanel4);
             this.ClientsTab.Text = "Clientes";
             // 
@@ -131,21 +128,6 @@
             this.ClientsButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("ClientsButton.SmallImage")));
             this.ClientsButton.Text = "";
             this.ClientsButton.Click += new System.EventHandler(this.ClientsButton_Click);
-            // 
-            // ribbonPanel3
-            // 
-            this.ribbonPanel3.Items.Add(this.EditClientButton);
-            this.ribbonPanel3.Name = "ribbonPanel3";
-            this.ribbonPanel3.Text = "Modificar";
-            // 
-            // EditClientButton
-            // 
-            this.EditClientButton.Image = ((System.Drawing.Image)(resources.GetObject("EditClientButton.Image")));
-            this.EditClientButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("EditClientButton.LargeImage")));
-            this.EditClientButton.Name = "EditClientButton";
-            this.EditClientButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("EditClientButton.SmallImage")));
-            this.EditClientButton.Text = "";
-            this.EditClientButton.Click += new System.EventHandler(this.EditClientButton_Click);
             // 
             // ribbonPanel4
             // 
@@ -608,8 +590,6 @@
         private System.Windows.Forms.RibbonTab ClientsTab;
         private System.Windows.Forms.RibbonPanel ribbonPanel2;
         private System.Windows.Forms.RibbonButton ClientsButton;
-        private System.Windows.Forms.RibbonPanel ribbonPanel3;
-        private System.Windows.Forms.RibbonButton EditClientButton;
         private System.Windows.Forms.RibbonPanel ribbonPanel4;
         private System.Windows.Forms.RibbonButton CalendarButton;
         private System.Windows.Forms.RibbonTab SalesTab;

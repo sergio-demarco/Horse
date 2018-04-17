@@ -48,77 +48,73 @@ namespace Horse.UserControls
             string where8 = "";
             string where9 = "";
             string where10 = "";
+            string where11 = "";
             string clientSearch = "";
             int flag = 0;
             if (txtClients == null) { clientSearch = ""; } else { clientSearch = txtClients.Text; }
             if (checkNombre.Checked == true)
             {
                 flag = 1;
-                query = query + ",name";
-                where1 = where1 + " name like'%" + clientSearch + "%'";
+                where1 = where1 + " name like'%" + clientSearch + "%' ";
             }
             if (checkApellido.Checked == true)
             {
                 flag = 1;
-                query = query + ",lastname";
                 where2 = where2 + "lastname like'%" + clientSearch + "%'";
             }
             if (checkCorreo.Checked == true)
             {
                 flag = 1;
-                query = query + ",email";
                 where3 = where3 + "email like'%" + clientSearch + "%'";
             }
             if (checkCuit.Checked == true)
             {
                 flag = 1;
-                query = query + ",cuit";
                 where4 = where4 + "cuit like'%" + clientSearch + "%'";
             }
             if (checkDni.Checked == true)
             {
                 flag = 1;
-                query = query + ",dni";
                 where5 = where5 + "dni like'%" + clientSearch + "%'";
             }
             if (checkDomicilio.Checked == true)
             {
                 flag = 1;
-                query = query + ",adress";
                 where6 = where6 + "adress like'%" + clientSearch + "%'";
             }
             if (checkLocalidad.Checked == true)
             {
                 flag = 1;
-                query = query + ",location";
                 where7 = where7 + "location like'%" + clientSearch + "%'";
             }
 
             if (checkNombreMascota.Checked == true)
             {
                 flag = 1;
-                query = query + ",petname";
                 where8 = where8 + "petname like'%" + clientSearch + "%'";
             }
             if (checkRazSocial.Checked == true)
             {
                 flag = 1;
-                query = query + ",razonsoc";
                 where9 = where9 + "razonsoc like'%" + clientSearch + "%'";
             }
             if (checkTelefono.Checked == true)
             {
                 flag = 1;
-                query = query + ",phone";
                 where10 = where10 + "phone like'%" + clientSearch + "%'";
+            }
+            if (checkPhone2.Checked == true)
+            {
+                flag = 1;
+                where11 = where11 + "phone2 like'%" + clientSearch + "%'";
             }
             if (flag == 0)
             {
-                query = "Select id, name,lastname,email,cuit,dni,adress,location,petname,razonsoc,phone from Clients";
+                query = "Select id, name,lastname,email,cuit,dni,adress,location,petname,razonsoc,phone,phone2 from Clients";
             }
             else
             {
-                query = query + " from Clients where " + where1 + " and " + where2 + " and " + where3 + " and " + where4 + " and " + where5 + " and " + where6 + " and " + where7 + " and " + where8 + " and " + where9 + " and " + where10;
+                query = "Select id, name,lastname,email,cuit,dni,adress,location,petname,razonsoc,phone,phone2  from Clients where " + where1 + " and " + where2 + " and " + where3 + " and " + where4 + " and " + where5 + " and " + where6 + " and " + where7 + " and " + where8 + " and " + where9 + " and " + where10 + " and " + where11;
             }
 
 
@@ -137,32 +133,12 @@ namespace Horse.UserControls
                 sqlDataAdap.Fill(dtRecord);
                 dataClients.AutoGenerateColumns = false;
                 dataClients.DataSource = dtRecord;
-
-                //DataGridViewButtonColumn buttons = new DataGridViewButtonColumn();
-                //{
-                //    buttons.HeaderText = "";
-                //    buttons.Text = "Editar";
-                //    buttons.UseColumnTextForButtonValue = true;
-                //    buttons.AutoSizeMode =
-                //        DataGridViewAutoSizeColumnMode.AllCells;
-                //    buttons.FlatStyle = FlatStyle.Standard;
-                //    buttons.CellTemplate.Style.BackColor = Color.Honeydew;
-                //    buttons.DisplayIndex = 0;
-                //}
-
-                //dataClients.Columns.Add(buttons);
-
-
-
             }
             catch
             {
 
 
             }
-
-
-
         }
 
         private void dataClients_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -170,7 +146,6 @@ namespace Horse.UserControls
             if (this.dataClients.Columns[e.ColumnIndex].Name.Equals("Editar"))
             {
                 DataGridViewRow row = this.dataClients.Rows[e.RowIndex];
-
 
                 string id = row.Cells[1].Value.ToString();
                 string name = row.Cells[2].Value.ToString();
@@ -183,8 +158,9 @@ namespace Horse.UserControls
                 string petname = row.Cells[9].Value.ToString();
                 string razonsoc = row.Cells[10].Value.ToString();
                 string phone = row.Cells[11].Value.ToString();
+                string phone2 = row.Cells[12].Value.ToString();
 
-                Class.Clients cliente = new Class.Clients(id, name, lastname, email, cuit, dni, adress, location, petname, razonsoc,phone);
+                Class.Clients cliente = new Class.Clients(id, name, lastname, email, cuit, dni, adress, location, petname, razonsoc,phone, phone2);
 
                 Forms.ModifyClient modifyClient = new Forms.ModifyClient(cliente);
                 modifyClient.Show();
