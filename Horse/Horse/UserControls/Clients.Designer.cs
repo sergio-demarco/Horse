@@ -30,18 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clients));
             this.dataClients = new System.Windows.Forms.DataGridView();
-            this.txtClients = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.checkNombre = new System.Windows.Forms.CheckBox();
-            this.checkApellido = new System.Windows.Forms.CheckBox();
-            this.checkCorreo = new System.Windows.Forms.CheckBox();
-            this.checkCuit = new System.Windows.Forms.CheckBox();
-            this.checkDni = new System.Windows.Forms.CheckBox();
-            this.checkLocalidad = new System.Windows.Forms.CheckBox();
-            this.checkNombreMascota = new System.Windows.Forms.CheckBox();
-            this.checkRazSocial = new System.Windows.Forms.CheckBox();
-            this.checkTelefono = new System.Windows.Forms.CheckBox();
-            this.checkDomicilio = new System.Windows.Forms.CheckBox();
             this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +43,18 @@
             this.razonsoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtClients = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.checkNombre = new System.Windows.Forms.CheckBox();
+            this.checkApellido = new System.Windows.Forms.CheckBox();
+            this.checkCorreo = new System.Windows.Forms.CheckBox();
+            this.checkCuit = new System.Windows.Forms.CheckBox();
+            this.checkDni = new System.Windows.Forms.CheckBox();
+            this.checkLocalidad = new System.Windows.Forms.CheckBox();
+            this.checkNombreMascota = new System.Windows.Forms.CheckBox();
+            this.checkRazSocial = new System.Windows.Forms.CheckBox();
+            this.checkTelefono = new System.Windows.Forms.CheckBox();
+            this.checkDomicilio = new System.Windows.Forms.CheckBox();
             this.checkPhone2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataClients)).BeginInit();
             this.SuspendLayout();
@@ -79,22 +79,104 @@
             this.phone2});
             this.dataClients.Location = new System.Drawing.Point(23, 83);
             this.dataClients.Name = "dataClients";
-            this.dataClients.Size = new System.Drawing.Size(897, 464);
+            this.dataClients.Size = new System.Drawing.Size(1257, 464);
             this.dataClients.TabIndex = 0;
             this.dataClients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataClients_CellClick);
+            // 
+            // Editar
+            // 
+            this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Editar.HeaderText = "";
+            this.Editar.Name = "Editar";
+            this.Editar.Text = "Editar";
+            this.Editar.UseColumnTextForButtonValue = true;
+            this.Editar.Width = 5;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "name";
+            this.name.Name = "name";
+            // 
+            // lastname
+            // 
+            this.lastname.DataPropertyName = "lastname";
+            this.lastname.HeaderText = "lastname";
+            this.lastname.Name = "lastname";
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "email";
+            this.email.Name = "email";
+            // 
+            // cuit
+            // 
+            this.cuit.DataPropertyName = "cuit";
+            this.cuit.HeaderText = "cuit";
+            this.cuit.Name = "cuit";
+            // 
+            // dni
+            // 
+            this.dni.DataPropertyName = "dni";
+            this.dni.HeaderText = "dni";
+            this.dni.Name = "dni";
+            // 
+            // adress
+            // 
+            this.adress.DataPropertyName = "adress";
+            this.adress.HeaderText = "adress";
+            this.adress.Name = "adress";
+            // 
+            // location
+            // 
+            this.location.DataPropertyName = "location";
+            this.location.HeaderText = "location";
+            this.location.Name = "location";
+            // 
+            // petname
+            // 
+            this.petname.DataPropertyName = "petname";
+            this.petname.HeaderText = "petname";
+            this.petname.Name = "petname";
+            // 
+            // razonsoc
+            // 
+            this.razonsoc.DataPropertyName = "razonsoc";
+            this.razonsoc.HeaderText = "razonsoc";
+            this.razonsoc.Name = "razonsoc";
+            // 
+            // phone
+            // 
+            this.phone.DataPropertyName = "phone";
+            this.phone.HeaderText = "phone";
+            this.phone.Name = "phone";
+            // 
+            // phone2
+            // 
+            this.phone2.DataPropertyName = "phone2";
+            this.phone2.HeaderText = "phone2";
+            this.phone2.Name = "phone2";
             // 
             // txtClients
             // 
             this.txtClients.Location = new System.Drawing.Point(23, 19);
             this.txtClients.Multiline = true;
             this.txtClients.Name = "txtClients";
-            this.txtClients.Size = new System.Drawing.Size(830, 35);
+            this.txtClients.Size = new System.Drawing.Size(1115, 35);
             this.txtClients.TabIndex = 1;
             // 
             // btnSearch
             // 
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(859, 19);
+            this.btnSearch.Location = new System.Drawing.Point(1144, 19);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(61, 54);
             this.btnSearch.TabIndex = 2;
@@ -221,88 +303,6 @@
             this.checkDomicilio.Text = "Domicilio";
             this.checkDomicilio.UseVisualStyleBackColor = true;
             // 
-            // Editar
-            // 
-            this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Editar.HeaderText = "";
-            this.Editar.Name = "Editar";
-            this.Editar.Text = "Editar";
-            this.Editar.UseColumnTextForButtonValue = true;
-            this.Editar.Width = 5;
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "name";
-            this.name.Name = "name";
-            // 
-            // lastname
-            // 
-            this.lastname.DataPropertyName = "lastname";
-            this.lastname.HeaderText = "lastname";
-            this.lastname.Name = "lastname";
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "email";
-            this.email.HeaderText = "email";
-            this.email.Name = "email";
-            // 
-            // cuit
-            // 
-            this.cuit.DataPropertyName = "cuit";
-            this.cuit.HeaderText = "cuit";
-            this.cuit.Name = "cuit";
-            // 
-            // dni
-            // 
-            this.dni.DataPropertyName = "dni";
-            this.dni.HeaderText = "dni";
-            this.dni.Name = "dni";
-            // 
-            // adress
-            // 
-            this.adress.DataPropertyName = "adress";
-            this.adress.HeaderText = "adress";
-            this.adress.Name = "adress";
-            // 
-            // location
-            // 
-            this.location.DataPropertyName = "location";
-            this.location.HeaderText = "location";
-            this.location.Name = "location";
-            // 
-            // petname
-            // 
-            this.petname.DataPropertyName = "petname";
-            this.petname.HeaderText = "petname";
-            this.petname.Name = "petname";
-            // 
-            // razonsoc
-            // 
-            this.razonsoc.DataPropertyName = "razonsoc";
-            this.razonsoc.HeaderText = "razonsoc";
-            this.razonsoc.Name = "razonsoc";
-            // 
-            // phone
-            // 
-            this.phone.DataPropertyName = "phone";
-            this.phone.HeaderText = "phone";
-            this.phone.Name = "phone";
-            // 
-            // phone2
-            // 
-            this.phone2.DataPropertyName = "phone2";
-            this.phone2.HeaderText = "phone2";
-            this.phone2.Name = "phone2";
-            // 
             // checkPhone2
             // 
             this.checkPhone2.AutoSize = true;
@@ -334,7 +334,7 @@
             this.Controls.Add(this.txtClients);
             this.Controls.Add(this.dataClients);
             this.Name = "Clients";
-            this.Size = new System.Drawing.Size(950, 550);
+            this.Size = new System.Drawing.Size(1446, 550);
             this.Load += new System.EventHandler(this.Clients_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataClients)).EndInit();
             this.ResumeLayout(false);

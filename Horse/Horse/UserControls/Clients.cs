@@ -55,58 +55,58 @@ namespace Horse.UserControls
             if (checkNombre.Checked == true)
             {
                 flag = 1;
-                where1 = where1 + " name like'%" + clientSearch + "%' ";
+                where1 = where1 + "(name like'%" + clientSearch + "%' or name is null)";
             }
             if (checkApellido.Checked == true)
             {
                 flag = 1;
-                where2 = where2 + "lastname like'%" + clientSearch + "%'";
+                where2 = where2 + "(lastname like'%" + clientSearch + "%' or lastname is null)";
             }
             if (checkCorreo.Checked == true)
             {
                 flag = 1;
-                where3 = where3 + "email like'%" + clientSearch + "%'";
+                where3 = where3 + "(email like'%" + clientSearch + "%' or email is null)";
             }
             if (checkCuit.Checked == true)
             {
                 flag = 1;
-                where4 = where4 + "cuit like'%" + clientSearch + "%'";
+                where4 = where4 + "(cuit like'%" + clientSearch + "%' or cuit is null)";
             }
             if (checkDni.Checked == true)
             {
                 flag = 1;
-                where5 = where5 + "dni like'%" + clientSearch + "%'";
+                where5 = where5 + "(dni like'%" + clientSearch + "%' or dni is null)";
             }
             if (checkDomicilio.Checked == true)
             {
                 flag = 1;
-                where6 = where6 + "adress like'%" + clientSearch + "%'";
+                where6 = where6 + "(adress like'%" + clientSearch + "%' or adress is null)";
             }
             if (checkLocalidad.Checked == true)
             {
                 flag = 1;
-                where7 = where7 + "location like'%" + clientSearch + "%'";
+                where7 = where7 + "(location like'%" + clientSearch + "%' or location is null)";
             }
 
             if (checkNombreMascota.Checked == true)
             {
                 flag = 1;
-                where8 = where8 + "petname like'%" + clientSearch + "%'";
+                where8 = where8 + "(petname like'%" + clientSearch + "%' or petname is null)";
             }
             if (checkRazSocial.Checked == true)
             {
                 flag = 1;
-                where9 = where9 + "razonsoc like'%" + clientSearch + "%'";
+                where9 = where9 + "(razonsoc like'%" + clientSearch + "%' or razonsoc is null)";
             }
             if (checkTelefono.Checked == true)
             {
                 flag = 1;
-                where10 = where10 + "phone like'%" + clientSearch + "%'";
+                where10 = where10 + "(phone like'%" + clientSearch + "%' or phone is null)";
             }
             if (checkPhone2.Checked == true)
             {
                 flag = 1;
-                where11 = where11 + "phone2 like'%" + clientSearch + "%'";
+                where11 = where11 + "(phone2 like'%" + clientSearch + "%' or phone2 is null)";
             }
             if (flag == 0)
             {

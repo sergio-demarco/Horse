@@ -30,11 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewClient));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtCuit = new System.Windows.Forms.TextBox();
-            this.txtRazonSoc = new System.Windows.Forms.TextBox();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.txtLocalidad = new System.Windows.Forms.TextBox();
-            this.txtDomicilio = new System.Windows.Forms.TextBox();
+            this.lblPhone2 = new System.Windows.Forms.Label();
+            this.txtPhone2 = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtNombreMascota = new System.Windows.Forms.TextBox();
             this.txtDni = new System.Windows.Forms.TextBox();
@@ -44,16 +41,19 @@
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblDni = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.lblDomicilio = new System.Windows.Forms.Label();
-            this.lblLocalidad = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.lblCUIT = new System.Windows.Forms.Label();
-            this.lblRazonSoc = new System.Windows.Forms.Label();
             this.lblNombreMascota = new System.Windows.Forms.Label();
+            this.lblCUIT = new System.Windows.Forms.Label();
+            this.txtCuit = new System.Windows.Forms.TextBox();
+            this.txtRazonSoc = new System.Windows.Forms.TextBox();
+            this.lblRazonSoc = new System.Windows.Forms.Label();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.txtLocalidad = new System.Windows.Forms.TextBox();
+            this.lblLocalidad = new System.Windows.Forms.Label();
+            this.lblDomicilio = new System.Windows.Forms.Label();
+            this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblErrorNewClient = new System.Windows.Forms.Label();
-            this.txtPhone2 = new System.Windows.Forms.TextBox();
-            this.lblPhone2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,50 +103,25 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(908, 395);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // txtCuit
+            // lblPhone2
             // 
-            this.txtCuit.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtCuit.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtCuit.Location = new System.Drawing.Point(286, 365);
-            this.txtCuit.Name = "txtCuit";
-            this.txtCuit.Size = new System.Drawing.Size(619, 29);
-            this.txtCuit.TabIndex = 31;
+            this.lblPhone2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblPhone2.AutoSize = true;
+            this.lblPhone2.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.lblPhone2.Location = new System.Drawing.Point(3, 184);
+            this.lblPhone2.Name = "lblPhone2";
+            this.lblPhone2.Size = new System.Drawing.Size(74, 23);
+            this.lblPhone2.TabIndex = 33;
+            this.lblPhone2.Text = "Telefono:";
             // 
-            // txtRazonSoc
+            // txtPhone2
             // 
-            this.txtRazonSoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtRazonSoc.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtRazonSoc.Location = new System.Drawing.Point(286, 328);
-            this.txtRazonSoc.Name = "txtRazonSoc";
-            this.txtRazonSoc.Size = new System.Drawing.Size(619, 29);
-            this.txtRazonSoc.TabIndex = 30;
-            // 
-            // txtCorreo
-            // 
-            this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtCorreo.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtCorreo.Location = new System.Drawing.Point(286, 291);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(619, 29);
-            this.txtCorreo.TabIndex = 29;
-            // 
-            // txtLocalidad
-            // 
-            this.txtLocalidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtLocalidad.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtLocalidad.Location = new System.Drawing.Point(286, 255);
-            this.txtLocalidad.Name = "txtLocalidad";
-            this.txtLocalidad.Size = new System.Drawing.Size(619, 29);
-            this.txtLocalidad.TabIndex = 28;
-            // 
-            // txtDomicilio
-            // 
-            this.txtDomicilio.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtDomicilio.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtDomicilio.Location = new System.Drawing.Point(286, 218);
-            this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(619, 29);
-            this.txtDomicilio.TabIndex = 27;
+            this.txtPhone2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtPhone2.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.txtPhone2.Location = new System.Drawing.Point(286, 181);
+            this.txtPhone2.Name = "txtPhone2";
+            this.txtPhone2.Size = new System.Drawing.Size(619, 29);
+            this.txtPhone2.TabIndex = 32;
             // 
             // txtTelefono
             // 
@@ -237,38 +212,16 @@
             this.lblTelefono.TabIndex = 6;
             this.lblTelefono.Text = "Telefono:";
             // 
-            // lblDomicilio
+            // lblNombreMascota
             // 
-            this.lblDomicilio.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblDomicilio.AutoSize = true;
-            this.lblDomicilio.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblDomicilio.Location = new System.Drawing.Point(3, 221);
-            this.lblDomicilio.Name = "lblDomicilio";
-            this.lblDomicilio.Size = new System.Drawing.Size(76, 23);
-            this.lblDomicilio.TabIndex = 8;
-            this.lblDomicilio.Text = "Domicilio:";
-            // 
-            // lblLocalidad
-            // 
-            this.lblLocalidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblLocalidad.AutoSize = true;
-            this.lblLocalidad.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblLocalidad.Location = new System.Drawing.Point(3, 258);
-            this.lblLocalidad.Name = "lblLocalidad";
-            this.lblLocalidad.Size = new System.Drawing.Size(82, 23);
-            this.lblLocalidad.TabIndex = 17;
-            this.lblLocalidad.Text = "Localidad:";
-            // 
-            // lblCorreo
-            // 
-            this.lblCorreo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblCorreo.Location = new System.Drawing.Point(3, 294);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(142, 23);
-            this.lblCorreo.TabIndex = 18;
-            this.lblCorreo.Text = "Correo Electronico:";
+            this.lblNombreMascota.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblNombreMascota.AutoSize = true;
+            this.lblNombreMascota.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.lblNombreMascota.Location = new System.Drawing.Point(3, 112);
+            this.lblNombreMascota.Name = "lblNombreMascota";
+            this.lblNombreMascota.Size = new System.Drawing.Size(155, 23);
+            this.lblNombreMascota.TabIndex = 3;
+            this.lblNombreMascota.Text = "Nombre de Mascota:";
             // 
             // lblCUIT
             // 
@@ -281,6 +234,24 @@
             this.lblCUIT.TabIndex = 20;
             this.lblCUIT.Text = "CUIT (empresa):";
             // 
+            // txtCuit
+            // 
+            this.txtCuit.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCuit.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.txtCuit.Location = new System.Drawing.Point(286, 365);
+            this.txtCuit.Name = "txtCuit";
+            this.txtCuit.Size = new System.Drawing.Size(619, 29);
+            this.txtCuit.TabIndex = 31;
+            // 
+            // txtRazonSoc
+            // 
+            this.txtRazonSoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtRazonSoc.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.txtRazonSoc.Location = new System.Drawing.Point(286, 328);
+            this.txtRazonSoc.Name = "txtRazonSoc";
+            this.txtRazonSoc.Size = new System.Drawing.Size(619, 29);
+            this.txtRazonSoc.TabIndex = 30;
+            // 
             // lblRazonSoc
             // 
             this.lblRazonSoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -292,16 +263,65 @@
             this.lblRazonSoc.TabIndex = 19;
             this.lblRazonSoc.Text = "Razon Social (empresa):";
             // 
-            // lblNombreMascota
+            // txtCorreo
             // 
-            this.lblNombreMascota.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblNombreMascota.AutoSize = true;
-            this.lblNombreMascota.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblNombreMascota.Location = new System.Drawing.Point(3, 112);
-            this.lblNombreMascota.Name = "lblNombreMascota";
-            this.lblNombreMascota.Size = new System.Drawing.Size(155, 23);
-            this.lblNombreMascota.TabIndex = 3;
-            this.lblNombreMascota.Text = "Nombre de Mascota:";
+            this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCorreo.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.txtCorreo.Location = new System.Drawing.Point(286, 291);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(619, 29);
+            this.txtCorreo.TabIndex = 29;
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.lblCorreo.Location = new System.Drawing.Point(3, 294);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(142, 23);
+            this.lblCorreo.TabIndex = 18;
+            this.lblCorreo.Text = "Correo Electronico:";
+            // 
+            // txtLocalidad
+            // 
+            this.txtLocalidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtLocalidad.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.txtLocalidad.Location = new System.Drawing.Point(286, 255);
+            this.txtLocalidad.Name = "txtLocalidad";
+            this.txtLocalidad.Size = new System.Drawing.Size(619, 29);
+            this.txtLocalidad.TabIndex = 28;
+            // 
+            // lblLocalidad
+            // 
+            this.lblLocalidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblLocalidad.AutoSize = true;
+            this.lblLocalidad.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.lblLocalidad.Location = new System.Drawing.Point(3, 258);
+            this.lblLocalidad.Name = "lblLocalidad";
+            this.lblLocalidad.Size = new System.Drawing.Size(82, 23);
+            this.lblLocalidad.TabIndex = 17;
+            this.lblLocalidad.Text = "Localidad:";
+            // 
+            // lblDomicilio
+            // 
+            this.lblDomicilio.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblDomicilio.AutoSize = true;
+            this.lblDomicilio.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.lblDomicilio.Location = new System.Drawing.Point(3, 221);
+            this.lblDomicilio.Name = "lblDomicilio";
+            this.lblDomicilio.Size = new System.Drawing.Size(76, 23);
+            this.lblDomicilio.TabIndex = 8;
+            this.lblDomicilio.Text = "Domicilio:";
+            // 
+            // txtDomicilio
+            // 
+            this.txtDomicilio.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtDomicilio.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.txtDomicilio.Location = new System.Drawing.Point(286, 218);
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(619, 29);
+            this.txtDomicilio.TabIndex = 27;
             // 
             // btnGuardar
             // 
@@ -329,26 +349,6 @@
             this.lblErrorNewClient.TabIndex = 2;
             this.lblErrorNewClient.Text = "**Todos los campos deben ser completados**";
             this.lblErrorNewClient.Visible = false;
-            // 
-            // txtPhone2
-            // 
-            this.txtPhone2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtPhone2.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.txtPhone2.Location = new System.Drawing.Point(286, 181);
-            this.txtPhone2.Name = "txtPhone2";
-            this.txtPhone2.Size = new System.Drawing.Size(619, 29);
-            this.txtPhone2.TabIndex = 32;
-            // 
-            // lblPhone2
-            // 
-            this.lblPhone2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblPhone2.AutoSize = true;
-            this.lblPhone2.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblPhone2.Location = new System.Drawing.Point(3, 184);
-            this.lblPhone2.Name = "lblPhone2";
-            this.lblPhone2.Size = new System.Drawing.Size(74, 23);
-            this.lblPhone2.TabIndex = 33;
-            this.lblPhone2.Text = "Telefono:";
             // 
             // NewClient
             // 
