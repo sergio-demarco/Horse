@@ -186,7 +186,7 @@ namespace Horse
                 UserControls.NewStock.Instance.BringToFront();
         }
 
-        private void ModifyStockButton_Click(object sender, EventArgs e)
+        public void ModifyStockButton_Click(object sender, EventArgs e)
         {
             if (!PanelMainView.Controls.Contains(UserControls.ModifyStock.Instance))
             {
@@ -302,6 +302,5 @@ namespace Horse
             else
                 UserControls.NewClient.Instance.BringToFront();
         }
-
     }
 }
