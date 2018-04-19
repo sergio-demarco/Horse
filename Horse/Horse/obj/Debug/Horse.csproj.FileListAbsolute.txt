@@ -23,10 +23,8 @@ C:\Users\Admin\Desktop\Horse\Horse\Horse\bin\Debug\Horse.exe
 C:\Users\Admin\Desktop\Horse\Horse\Horse\bin\Debug\Horse.pdb
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.exe
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.pdb
-C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Password.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Permision.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\bin\Debug\System.Windows.Forms.Ribbon.dll
-C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.NewDocument.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.NewClient.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.Clients.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\bin\Debug\Horse.exe.config
@@ -47,3 +45,4 @@ C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.NewClient
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.GenerateResource.Cache
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.exe
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.pdb
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.ModifyClient.resources

@@ -56,6 +56,8 @@
             this.checkTelefono = new System.Windows.Forms.CheckBox();
             this.checkDomicilio = new System.Windows.Forms.CheckBox();
             this.checkPhone2 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkAllChecks = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataClients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -188,7 +190,7 @@
             this.checkNombre.AutoSize = true;
             this.checkNombre.Checked = true;
             this.checkNombre.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkNombre.Location = new System.Drawing.Point(23, 60);
+            this.checkNombre.Location = new System.Drawing.Point(186, 59);
             this.checkNombre.Name = "checkNombre";
             this.checkNombre.Size = new System.Drawing.Size(63, 17);
             this.checkNombre.TabIndex = 4;
@@ -200,7 +202,7 @@
             this.checkApellido.AutoSize = true;
             this.checkApellido.Checked = true;
             this.checkApellido.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkApellido.Location = new System.Drawing.Point(92, 60);
+            this.checkApellido.Location = new System.Drawing.Point(255, 59);
             this.checkApellido.Name = "checkApellido";
             this.checkApellido.Size = new System.Drawing.Size(63, 17);
             this.checkApellido.TabIndex = 5;
@@ -212,7 +214,7 @@
             this.checkCorreo.AutoSize = true;
             this.checkCorreo.Checked = true;
             this.checkCorreo.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkCorreo.Location = new System.Drawing.Point(616, 60);
+            this.checkCorreo.Location = new System.Drawing.Point(779, 59);
             this.checkCorreo.Name = "checkCorreo";
             this.checkCorreo.Size = new System.Drawing.Size(57, 17);
             this.checkCorreo.TabIndex = 6;
@@ -224,7 +226,7 @@
             this.checkCuit.AutoSize = true;
             this.checkCuit.Checked = true;
             this.checkCuit.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkCuit.Location = new System.Drawing.Point(774, 60);
+            this.checkCuit.Location = new System.Drawing.Point(937, 59);
             this.checkCuit.Name = "checkCuit";
             this.checkCuit.Size = new System.Drawing.Size(44, 17);
             this.checkCuit.TabIndex = 7;
@@ -236,7 +238,7 @@
             this.checkDni.AutoSize = true;
             this.checkDni.Checked = true;
             this.checkDni.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkDni.Location = new System.Drawing.Point(161, 60);
+            this.checkDni.Location = new System.Drawing.Point(324, 59);
             this.checkDni.Name = "checkDni";
             this.checkDni.Size = new System.Drawing.Size(42, 17);
             this.checkDni.TabIndex = 8;
@@ -248,7 +250,7 @@
             this.checkLocalidad.AutoSize = true;
             this.checkLocalidad.Checked = true;
             this.checkLocalidad.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkLocalidad.Location = new System.Drawing.Point(544, 60);
+            this.checkLocalidad.Location = new System.Drawing.Point(707, 59);
             this.checkLocalidad.Name = "checkLocalidad";
             this.checkLocalidad.Size = new System.Drawing.Size(72, 17);
             this.checkLocalidad.TabIndex = 9;
@@ -260,7 +262,7 @@
             this.checkNombreMascota.AutoSize = true;
             this.checkNombreMascota.Checked = true;
             this.checkNombreMascota.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkNombreMascota.Location = new System.Drawing.Point(209, 60);
+            this.checkNombreMascota.Location = new System.Drawing.Point(372, 59);
             this.checkNombreMascota.Name = "checkNombreMascota";
             this.checkNombreMascota.Size = new System.Drawing.Size(107, 17);
             this.checkNombreMascota.TabIndex = 10;
@@ -272,7 +274,7 @@
             this.checkRazSocial.AutoSize = true;
             this.checkRazSocial.Checked = true;
             this.checkRazSocial.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkRazSocial.Location = new System.Drawing.Point(679, 60);
+            this.checkRazSocial.Location = new System.Drawing.Point(842, 59);
             this.checkRazSocial.Name = "checkRazSocial";
             this.checkRazSocial.Size = new System.Drawing.Size(89, 17);
             this.checkRazSocial.TabIndex = 11;
@@ -284,7 +286,7 @@
             this.checkTelefono.AutoSize = true;
             this.checkTelefono.Checked = true;
             this.checkTelefono.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkTelefono.Location = new System.Drawing.Point(322, 60);
+            this.checkTelefono.Location = new System.Drawing.Point(485, 59);
             this.checkTelefono.Name = "checkTelefono";
             this.checkTelefono.Size = new System.Drawing.Size(68, 17);
             this.checkTelefono.TabIndex = 12;
@@ -296,7 +298,7 @@
             this.checkDomicilio.AutoSize = true;
             this.checkDomicilio.Checked = true;
             this.checkDomicilio.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkDomicilio.Location = new System.Drawing.Point(470, 60);
+            this.checkDomicilio.Location = new System.Drawing.Point(633, 59);
             this.checkDomicilio.Name = "checkDomicilio";
             this.checkDomicilio.Size = new System.Drawing.Size(68, 17);
             this.checkDomicilio.TabIndex = 13;
@@ -308,17 +310,42 @@
             this.checkPhone2.AutoSize = true;
             this.checkPhone2.Checked = true;
             this.checkPhone2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkPhone2.Location = new System.Drawing.Point(396, 60);
+            this.checkPhone2.Location = new System.Drawing.Point(559, 59);
             this.checkPhone2.Name = "checkPhone2";
             this.checkPhone2.Size = new System.Drawing.Size(74, 17);
             this.checkPhone2.TabIndex = 14;
             this.checkPhone2.Text = "Telefono2";
             this.checkPhone2.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.25F);
+            this.label1.Location = new System.Drawing.Point(19, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 22);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Buscar por:";
+            // 
+            // checkAllChecks
+            // 
+            this.checkAllChecks.AutoSize = true;
+            this.checkAllChecks.Checked = true;
+            this.checkAllChecks.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkAllChecks.Location = new System.Drawing.Point(109, 60);
+            this.checkAllChecks.Name = "checkAllChecks";
+            this.checkAllChecks.Size = new System.Drawing.Size(56, 17);
+            this.checkAllChecks.TabIndex = 16;
+            this.checkAllChecks.Text = "Todos";
+            this.checkAllChecks.UseVisualStyleBackColor = true;
+            this.checkAllChecks.CheckStateChanged += new System.EventHandler(this.checkAllChecks_CheckStateChanged);
+            // 
             // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkAllChecks);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.checkPhone2);
             this.Controls.Add(this.checkDomicilio);
             this.Controls.Add(this.checkTelefono);
@@ -371,5 +398,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn phone2;
         private System.Windows.Forms.CheckBox checkPhone2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkAllChecks;
     }
 }

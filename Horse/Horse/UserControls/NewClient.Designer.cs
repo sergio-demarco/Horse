@@ -110,9 +110,9 @@
             this.lblPhone2.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
             this.lblPhone2.Location = new System.Drawing.Point(3, 184);
             this.lblPhone2.Name = "lblPhone2";
-            this.lblPhone2.Size = new System.Drawing.Size(74, 23);
+            this.lblPhone2.Size = new System.Drawing.Size(87, 23);
             this.lblPhone2.TabIndex = 33;
-            this.lblPhone2.Text = "Telefono:";
+            this.lblPhone2.Text = "Telefono 2:";
             // 
             // txtPhone2
             // 

@@ -73,31 +73,24 @@ namespace Horse.UserControls
                         command.Parameters.AddWithValue("@phone", txtTelefono.Text);
                         command.Parameters.AddWithValue("@phone2", txtPhone2.Text);
 
-                        using (var reader = command.ExecuteReader())
+                        count = command.ExecuteNonQuery();
+                        if (count > 0)
                         {
-                            while (reader.Read())
-                            {
-                                count++;
-                            }
-                            if (count > 0)
-                            {
-                                txtApellido.Text = "";
-                                txtCorreo.Text = "";
-                                txtCuit.Text = "NO POSEE";
-                                txtDni.Text = "";
-                                txtDomicilio.Text = "";
-                                txtLocalidad.Text = "";
-                                txtNombre.Text = "";
-                                txtNombreMascota.Text = "";
-                                txtRazonSoc.Text = "NO POSEE";
-                                txtTelefono.Text = "";
-                                txtPhone2.Text = "";
-                            }
-                            else
-                            {
+                            txtApellido.Text = "";
+                            txtCorreo.Text = "";
+                            txtCuit.Text = "NO POSEE";
+                            txtDni.Text = "";
+                            txtDomicilio.Text = "";
+                            txtLocalidad.Text = "";
+                            txtNombre.Text = "";
+                            txtNombreMascota.Text = "";
+                            txtRazonSoc.Text = "NO POSEE";
+                            txtTelefono.Text = "";
+                            txtPhone2.Text = "";
 
-                            }
-
+                            Forms.DialogOk insertOk = new Forms.DialogOk("Los datos fueron grabados con exito!");
+                            insertOk.Show();
+                            insertOk.BringToFront();
                         }
                     }
 

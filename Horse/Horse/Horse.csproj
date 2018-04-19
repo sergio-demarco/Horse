@@ -93,18 +93,6 @@
     <Compile Include="Forms\MyPass.Designer.cs">
       <DependentUpon>MyPass.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\NewDocument.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\NewDocument.Designer.cs">
-      <DependentUpon>NewDocument.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Password.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Password.Designer.cs">
-      <DependentUpon>Password.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Permision.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,12 +247,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MyPass.resx">
       <DependentUpon>MyPass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\NewDocument.resx">
-      <DependentUpon>NewDocument.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Password.resx">
-      <DependentUpon>Password.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Permision.resx">
       <DependentUpon>Permision.cs</DependentUpon>
