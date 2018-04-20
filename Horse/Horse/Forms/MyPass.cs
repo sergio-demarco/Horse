@@ -25,7 +25,8 @@ namespace Horse.Forms
                 Class.MenuController myPass = new Class.MenuController();
                 if (myPass.resetPass(txtNewPass.Text) == true)
                 {
-                    Forms.DialogOk dialogOk = new Forms.DialogOk("Los datos fueron grabados con exito!");
+                    Color myColor = System.Drawing.Color.Black;
+                    Forms.DialogOk dialogOk = new Forms.DialogOk("Los datos fueron grabados con exito!", myColor);
                     this.Hide();
                     dialogOk.Show();
                 }

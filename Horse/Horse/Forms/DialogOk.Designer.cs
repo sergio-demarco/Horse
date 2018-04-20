@@ -35,7 +35,7 @@ namespace Horse.Forms
             // 
             // btnDialogOk
             // 
-            this.btnDialogOk.Location = new System.Drawing.Point(89, 50);
+            this.btnDialogOk.Location = new System.Drawing.Point(117, 48);
             this.btnDialogOk.Name = "btnDialogOk";
             this.btnDialogOk.Size = new System.Drawing.Size(75, 23);
             this.btnDialogOk.TabIndex = 0;
@@ -56,12 +56,13 @@ namespace Horse.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(261, 83);
+            this.ClientSize = new System.Drawing.Size(313, 83);
             this.ControlBox = false;
             this.Controls.Add(this.lblDialogOk);
             this.Controls.Add(this.btnDialogOk);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DialogOk";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.DialogOk_Load);
             this.ResumeLayout(false);

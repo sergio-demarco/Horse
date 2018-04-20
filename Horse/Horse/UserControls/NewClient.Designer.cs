@@ -53,7 +53,6 @@
             this.lblDomicilio = new System.Windows.Forms.Label();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.lblErrorNewClient = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,7 +120,7 @@
             this.txtPhone2.Location = new System.Drawing.Point(286, 181);
             this.txtPhone2.Name = "txtPhone2";
             this.txtPhone2.Size = new System.Drawing.Size(619, 29);
-            this.txtPhone2.TabIndex = 32;
+            this.txtPhone2.TabIndex = 5;
             // 
             // txtTelefono
             // 
@@ -130,7 +129,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(286, 144);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(619, 29);
-            this.txtTelefono.TabIndex = 26;
+            this.txtTelefono.TabIndex = 4;
             // 
             // txtNombreMascota
             // 
@@ -139,7 +138,7 @@
             this.txtNombreMascota.Location = new System.Drawing.Point(286, 109);
             this.txtNombreMascota.Name = "txtNombreMascota";
             this.txtNombreMascota.Size = new System.Drawing.Size(619, 29);
-            this.txtNombreMascota.TabIndex = 25;
+            this.txtNombreMascota.TabIndex = 3;
             // 
             // txtDni
             // 
@@ -148,7 +147,7 @@
             this.txtDni.Location = new System.Drawing.Point(286, 73);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(619, 29);
-            this.txtDni.TabIndex = 24;
+            this.txtDni.TabIndex = 2;
             // 
             // txtApellido
             // 
@@ -157,7 +156,7 @@
             this.txtApellido.Location = new System.Drawing.Point(286, 38);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(619, 29);
-            this.txtApellido.TabIndex = 23;
+            this.txtApellido.TabIndex = 1;
             // 
             // txtNombre
             // 
@@ -241,7 +240,7 @@
             this.txtCuit.Location = new System.Drawing.Point(286, 365);
             this.txtCuit.Name = "txtCuit";
             this.txtCuit.Size = new System.Drawing.Size(619, 29);
-            this.txtCuit.TabIndex = 31;
+            this.txtCuit.TabIndex = 10;
             // 
             // txtRazonSoc
             // 
@@ -250,7 +249,7 @@
             this.txtRazonSoc.Location = new System.Drawing.Point(286, 328);
             this.txtRazonSoc.Name = "txtRazonSoc";
             this.txtRazonSoc.Size = new System.Drawing.Size(619, 29);
-            this.txtRazonSoc.TabIndex = 30;
+            this.txtRazonSoc.TabIndex = 9;
             // 
             // lblRazonSoc
             // 
@@ -270,7 +269,7 @@
             this.txtCorreo.Location = new System.Drawing.Point(286, 291);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(619, 29);
-            this.txtCorreo.TabIndex = 29;
+            this.txtCorreo.TabIndex = 8;
             // 
             // lblCorreo
             // 
@@ -290,7 +289,7 @@
             this.txtLocalidad.Location = new System.Drawing.Point(286, 255);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(619, 29);
-            this.txtLocalidad.TabIndex = 28;
+            this.txtLocalidad.TabIndex = 7;
             // 
             // lblLocalidad
             // 
@@ -321,7 +320,7 @@
             this.txtDomicilio.Location = new System.Drawing.Point(286, 218);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(619, 29);
-            this.txtDomicilio.TabIndex = 27;
+            this.txtDomicilio.TabIndex = 6;
             // 
             // btnGuardar
             // 
@@ -338,24 +337,11 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // lblErrorNewClient
-            // 
-            this.lblErrorNewClient.AutoSize = true;
-            this.lblErrorNewClient.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.lblErrorNewClient.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorNewClient.Location = new System.Drawing.Point(303, 499);
-            this.lblErrorNewClient.Name = "lblErrorNewClient";
-            this.lblErrorNewClient.Size = new System.Drawing.Size(330, 23);
-            this.lblErrorNewClient.TabIndex = 2;
-            this.lblErrorNewClient.Text = "**Todos los campos deben ser completados**";
-            this.lblErrorNewClient.Visible = false;
-            // 
             // NewClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(205)))), ((int)(((byte)(239)))));
-            this.Controls.Add(this.lblErrorNewClient);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "NewClient";
@@ -364,7 +350,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -392,7 +377,6 @@
         private System.Windows.Forms.Label lblRazonSoc;
         private System.Windows.Forms.Label lblNombreMascota;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Label lblErrorNewClient;
         private System.Windows.Forms.Label lblPhone2;
         private System.Windows.Forms.TextBox txtPhone2;
     }

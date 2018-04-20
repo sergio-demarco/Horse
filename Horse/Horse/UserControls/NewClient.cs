@@ -44,7 +44,6 @@ namespace Horse.UserControls
             txtTelefono.Text = "";
             txtPhone2.Text = "";
 
-            lblErrorNewClient.Visible = false;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -88,7 +87,8 @@ namespace Horse.UserControls
                             txtTelefono.Text = "";
                             txtPhone2.Text = "";
 
-                            Forms.DialogOk insertOk = new Forms.DialogOk("Los datos fueron grabados con exito!");
+                            Color myColor = System.Drawing.Color.Black;
+                            Forms.DialogOk insertOk = new Forms.DialogOk("Los datos fueron grabados con exito!", myColor);
                             insertOk.Show();
                             insertOk.BringToFront();
                         }
@@ -103,7 +103,10 @@ namespace Horse.UserControls
             }
             else
             {
-                lblErrorNewClient.Visible = true;
+                Color myColor = System.Drawing.Color.Red;
+                Forms.DialogOk myDialog = new Forms.DialogOk("**Todos los campos deben ser completados**", myColor);
+                myDialog.Show();
+                myDialog.BringToFront();
             }
         }
     }

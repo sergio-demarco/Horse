@@ -12,10 +12,12 @@ namespace Horse.Forms
 {
     public partial class DialogOk : Form
     {
-        public DialogOk(string message)
+        public DialogOk(string message, Color color)
         {
-            lblDialogOk.Text = message;
             InitializeComponent();
+            lblDialogOk.Text = message;
+            lblDialogOk.ForeColor= color;
+            
         }
 
         private void btnDialogOk_Click(object sender, EventArgs e)

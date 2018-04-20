@@ -93,12 +93,6 @@
     <Compile Include="Forms\MyPass.Designer.cs">
       <DependentUpon>MyPass.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Permision.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Permision.Designer.cs">
-      <DependentUpon>Permision.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,9 +241,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MyPass.resx">
       <DependentUpon>MyPass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Permision.resx">
-      <DependentUpon>Permision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

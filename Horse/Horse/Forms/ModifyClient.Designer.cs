@@ -54,8 +54,8 @@
             this.lblLocalidad = new System.Windows.Forms.Label();
             this.lblDomicilio = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblID = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.lblID = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,79 +81,90 @@
             // 
             // txtName
             // 
+            this.txtName.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtName.Location = new System.Drawing.Point(194, 38);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(239, 20);
+            this.txtName.Size = new System.Drawing.Size(239, 26);
             this.txtName.TabIndex = 2;
             // 
             // txtLastname
             // 
+            this.txtLastname.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtLastname.Location = new System.Drawing.Point(194, 73);
             this.txtLastname.Name = "txtLastname";
-            this.txtLastname.Size = new System.Drawing.Size(239, 20);
+            this.txtLastname.Size = new System.Drawing.Size(239, 26);
             this.txtLastname.TabIndex = 3;
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtEmail.Location = new System.Drawing.Point(194, 327);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(239, 20);
+            this.txtEmail.Size = new System.Drawing.Size(239, 26);
             this.txtEmail.TabIndex = 10;
             // 
             // txtCuit
             // 
+            this.txtCuit.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtCuit.Location = new System.Drawing.Point(194, 396);
             this.txtCuit.Name = "txtCuit";
-            this.txtCuit.Size = new System.Drawing.Size(239, 20);
+            this.txtCuit.Size = new System.Drawing.Size(239, 26);
             this.txtCuit.TabIndex = 12;
             // 
             // txtDni
             // 
+            this.txtDni.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtDni.Location = new System.Drawing.Point(194, 109);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(239, 20);
+            this.txtDni.Size = new System.Drawing.Size(239, 26);
             this.txtDni.TabIndex = 4;
             // 
             // txtAdress
             // 
+            this.txtAdress.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtAdress.Location = new System.Drawing.Point(194, 254);
             this.txtAdress.Name = "txtAdress";
-            this.txtAdress.Size = new System.Drawing.Size(239, 20);
+            this.txtAdress.Size = new System.Drawing.Size(239, 26);
             this.txtAdress.TabIndex = 8;
             // 
             // txtLocation
             // 
+            this.txtLocation.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtLocation.Location = new System.Drawing.Point(194, 291);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(239, 20);
+            this.txtLocation.Size = new System.Drawing.Size(239, 26);
             this.txtLocation.TabIndex = 9;
             // 
             // txtPetname
             // 
+            this.txtPetname.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtPetname.Location = new System.Drawing.Point(194, 144);
             this.txtPetname.Name = "txtPetname";
-            this.txtPetname.Size = new System.Drawing.Size(239, 20);
+            this.txtPetname.Size = new System.Drawing.Size(239, 26);
             this.txtPetname.TabIndex = 5;
             // 
             // txtRazonsoc
             // 
+            this.txtRazonsoc.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtRazonsoc.Location = new System.Drawing.Point(194, 365);
             this.txtRazonsoc.Name = "txtRazonsoc";
-            this.txtRazonsoc.Size = new System.Drawing.Size(239, 20);
+            this.txtRazonsoc.Size = new System.Drawing.Size(239, 26);
             this.txtRazonsoc.TabIndex = 11;
             // 
             // txtPhone
             // 
+            this.txtPhone.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtPhone.Location = new System.Drawing.Point(194, 180);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(239, 20);
+            this.txtPhone.Size = new System.Drawing.Size(239, 26);
             this.txtPhone.TabIndex = 6;
             // 
             // txtPhone2
             // 
+            this.txtPhone2.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txtPhone2.Location = new System.Drawing.Point(194, 217);
             this.txtPhone2.Name = "txtPhone2";
-            this.txtPhone2.Size = new System.Drawing.Size(239, 20);
+            this.txtPhone2.Size = new System.Drawing.Size(239, 26);
             this.txtPhone2.TabIndex = 7;
             // 
             // label1
@@ -326,6 +337,15 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(443, 427);
             this.tableLayoutPanel1.TabIndex = 23;
             // 
+            // txtId
+            // 
+            this.txtId.Enabled = false;
+            this.txtId.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtId.Location = new System.Drawing.Point(194, 3);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(239, 26);
+            this.txtId.TabIndex = 1;
+            // 
             // lblID
             // 
             this.lblID.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -336,14 +356,6 @@
             this.lblID.Size = new System.Drawing.Size(28, 23);
             this.lblID.TabIndex = 34;
             this.lblID.Text = "ID:";
-            // 
-            // txtId
-            // 
-            this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(194, 3);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(239, 20);
-            this.txtId.TabIndex = 1;
             // 
             // ModifyClient
             // 
@@ -357,7 +369,7 @@
             this.Controls.Add(this.btnSave);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModifyClient";
-            this.Text = "ModifyClient";
+            this.Text = "Modificar Cliente";
             this.Load += new System.EventHandler(this.ModifyClient_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
