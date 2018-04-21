@@ -258,8 +258,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\CalendarClients.resx">
+      <DependentUpon>CalendarClients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Clients.resx">
       <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CutterPrice.resx">
+      <DependentUpon>CutterPrice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\NewClient.resx">
       <DependentUpon>NewClient.cs</DependentUpon>

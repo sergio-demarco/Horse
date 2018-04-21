@@ -33,9 +33,6 @@ C:\Users\sergio\Desktop\Horse\Horse\Horse\bin\Debug\System.Windows.Forms.Ribbon.
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.DialogOk.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.ModifyClient.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.MyPass.resources
-C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.NewDocument.resources
-C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Password.resources
-C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Permision.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Login.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.MainView.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Properties.Resources.resources
@@ -45,3 +42,5 @@ C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.GenerateResourc
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.exe
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.pdb
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.ModifyClient.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csprojResolveAssemblyReference.cache
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.CalendarClients.resources

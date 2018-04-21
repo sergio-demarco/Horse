@@ -54,7 +54,6 @@
             this.ribbonPanel10 = new System.Windows.Forms.RibbonPanel();
             this.AccesoryButton = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel11 = new System.Windows.Forms.RibbonPanel();
-            this.SurgeryButton = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel12 = new System.Windows.Forms.RibbonPanel();
             this.AllProductsButton = new System.Windows.Forms.RibbonButton();
             this.SuppliersTab = new System.Windows.Forms.RibbonTab();
@@ -89,6 +88,7 @@
             this.ribbonPanel26 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton4 = new System.Windows.Forms.RibbonButton();
             this.PanelMainView = new System.Windows.Forms.Panel();
+            this.ribbonButton1 = new System.Windows.Forms.RibbonButton();
             this.SuspendLayout();
             // 
             // ClientsTab
@@ -278,18 +278,9 @@
             // 
             // ribbonPanel11
             // 
-            this.ribbonPanel11.Items.Add(this.SurgeryButton);
+            this.ribbonPanel11.Items.Add(this.ribbonButton1);
             this.ribbonPanel11.Name = "ribbonPanel11";
             this.ribbonPanel11.Text = "Cirugias";
-            // 
-            // SurgeryButton
-            // 
-            this.SurgeryButton.Image = ((System.Drawing.Image)(resources.GetObject("SurgeryButton.Image")));
-            this.SurgeryButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("SurgeryButton.LargeImage")));
-            this.SurgeryButton.Name = "SurgeryButton";
-            this.SurgeryButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("SurgeryButton.SmallImage")));
-            this.SurgeryButton.Text = "";
-            this.SurgeryButton.Click += new System.EventHandler(this.SurgeryButton_Click);
             // 
             // ribbonPanel12
             // 
@@ -567,6 +558,15 @@
             this.PanelMainView.Size = new System.Drawing.Size(1023, 275);
             this.PanelMainView.TabIndex = 2;
             // 
+            // ribbonButton1
+            // 
+            this.ribbonButton1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.Image")));
+            this.ribbonButton1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.LargeImage")));
+            this.ribbonButton1.Name = "ribbonButton1";
+            this.ribbonButton1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.SmallImage")));
+            this.ribbonButton1.Text = "";
+            this.ribbonButton1.Click += new System.EventHandler(this.SurgeryButton_Click);
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -610,7 +610,6 @@
         private System.Windows.Forms.RibbonPanel ribbonPanel10;
         private System.Windows.Forms.RibbonButton AccesoryButton;
         private System.Windows.Forms.RibbonPanel ribbonPanel11;
-        private System.Windows.Forms.RibbonButton SurgeryButton;
         private System.Windows.Forms.RibbonPanel ribbonPanel12;
         private System.Windows.Forms.RibbonButton AllProductsButton;
         private System.Windows.Forms.RibbonTab SuppliersTab;
@@ -647,5 +646,6 @@
         private System.Windows.Forms.RibbonButton ribbonButton3;
         private System.Windows.Forms.RibbonPanel ribbonPanel26;
         private System.Windows.Forms.RibbonButton ribbonButton4;
+        private System.Windows.Forms.RibbonButton ribbonButton1;
     }
 }
