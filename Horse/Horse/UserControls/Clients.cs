@@ -14,7 +14,7 @@ namespace Horse.UserControls
 {
     public partial class Clients : UserControl
     {
-        string query = "select id, name,lastname,email,cuit,dni,adress,location,petname,razonsoc,phone,phone2 from Clients where (id like'%%' or id is null) ";
+        string query = "";
         private static Clients _instance;
 
         public static Clients Instance
@@ -33,6 +33,7 @@ namespace Horse.UserControls
 
         private void Clients_Load(object sender, EventArgs e)
         {
+            query = "select id, name,lastname,email,cuit,dni,adress,location,petname,razonsoc,phone,phone2 from Clients ";
             txtClients.Focus();
             Class.LoginController MyConnection = new Class.LoginController();
             SqlConnection connection = MyConnection.getConnection();
@@ -51,73 +52,74 @@ namespace Horse.UserControls
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            this.query = "select id, name,lastname,email,cuit,dni,adress,location,petname,razonsoc,phone,phone2 from Clients where (id is null) ";
             string customQuery;
             string clientSearch = "";
             if (txtClients != null) { clientSearch = txtClients.Text; }
             if (checkAllChecks.Checked == true)
             {
-                customQuery = "select id, name, lastname, email, cuit, dni, adress, location, petname, razonsoc, phone, phone2 from Clients where (name like'%" + clientSearch + "%' or name is null) and(lastname like'%" + clientSearch + "%' or lastname is null) and(email like'%" + clientSearch + "%' or email is null) and(cuit like'%" + clientSearch + "%' or cuit is null)and(dni like'%" + clientSearch + "%' or dni is null)and(adress like'%" + clientSearch + "%' or adress is null)and(location like'%" + clientSearch + "%' or location is null)and(petname like'%" + clientSearch + "%'  or petname is null)and(razonsoc like'%" + clientSearch + "%'  or razonsoc is null)and(phone like'%" + clientSearch + "%'  or phone is null)and(phone2 like'%" + clientSearch + "%'  or phone2 is null)";
+                customQuery = "select id, name, lastname, email, cuit, dni, adress, location, petname, razonsoc, phone, phone2 from Clients where (name like'%" + clientSearch + "%' or name is null) or(lastname like'%" + clientSearch + "%' or lastname is null) or(email like'%" + clientSearch + "%' or email is null) or(cuit like'%" + clientSearch + "%' or cuit is null)or(dni like'%" + clientSearch + "%' or dni is null)or(adress like'%" + clientSearch + "%' or adress is null)or(location like'%" + clientSearch + "%' or location is null)or(petname like'%" + clientSearch + "%'  or petname is null)or(razonsoc like'%" + clientSearch + "%'  or razonsoc is null)or(phone like'%" + clientSearch + "%'  or phone is null)or(phone2 like'%" + clientSearch + "%'  or phone2 is null)";
                 this.query = customQuery;
             }
             else
             {
                 if (checkNombre.Checked == true)
                 {
-                    customQuery = " and (name like'%" + clientSearch + "%' or name is null)";
+                    customQuery = " or (name like'%" + clientSearch + "%' or name is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkApellido.Checked == true)
                 {
-                    customQuery = " and (lastname like'%" + clientSearch + "%' or lastname is null)";
+                    customQuery = " or (lastname like'%" + clientSearch + "%' or lastname is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkCorreo.Checked == true)
                 {
-                    customQuery = " and (email like'%" + clientSearch + "%' or email is null)";
+                    customQuery = " or (email like'%" + clientSearch + "%' or email is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkCuit.Checked == true)
                 {
-                    customQuery = " and (cuit like'%" + clientSearch + "%' or cuit is null)";
+                    customQuery = " or (cuit like'%" + clientSearch + "%' or cuit is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkDni.Checked == true)
                 {
-                    customQuery = "and (dni like'%" + clientSearch + "%' or dni is null)";
+                    customQuery = "or (dni like'%" + clientSearch + "%' or dni is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkDomicilio.Checked == true)
                 {
-                    customQuery = "and (adress like'%" + clientSearch + "%' or adress is null)";
+                    customQuery = "or (adress like'%" + clientSearch + "%' or adress is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkLocalidad.Checked == true)
                 {
-                    customQuery = "and (location like'%" + clientSearch + "%' or location is null)";
+                    customQuery = "or (location like'%" + clientSearch + "%' or location is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkNombreMascota.Checked == true)
                 {
-                    customQuery = "and (petname like'%" + clientSearch + "%' or petname is null)";
+                    customQuery = "or (petname like'%" + clientSearch + "%' or petname is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkRazSocial.Checked == true)
                 {
-                    customQuery = "and (razonsoc like'%" + clientSearch + "%' or razonsoc is null)";
+                    customQuery = "or (razonsoc like'%" + clientSearch + "%' or razonsoc is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkTelefono.Checked == true)
                 {
-                    customQuery = "and (phone like'%" + clientSearch + "%' or phone is null)";
+                    customQuery = "or (phone like'%" + clientSearch + "%' or phone is null)";
                     queryBuilder(customQuery);
                 }
                 if (checkPhone2.Checked == true)
                 {
-                    customQuery = "and (phone2 like'%" + clientSearch + "%' or phone2 is null)";
+                    customQuery = "or (phone2 like'%" + clientSearch + "%' or phone2 is null)";
                     queryBuilder(customQuery);
                 }
             }
-            
+
 
             try
             {
