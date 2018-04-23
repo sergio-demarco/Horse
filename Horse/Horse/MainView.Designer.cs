@@ -89,6 +89,8 @@
             this.ribbonPanel26 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton4 = new System.Windows.Forms.RibbonButton();
             this.PanelMainView = new System.Windows.Forms.Panel();
+            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
+            this.DebtsButton = new System.Windows.Forms.RibbonButton();
             this.SuspendLayout();
             // 
             // ClientsTab
@@ -97,6 +99,7 @@
             this.ClientsTab.Panels.Add(this.ribbonPanel22);
             this.ClientsTab.Panels.Add(this.ribbonPanel2);
             this.ClientsTab.Panels.Add(this.ribbonPanel4);
+            this.ClientsTab.Panels.Add(this.ribbonPanel3);
             this.ClientsTab.Text = "Clientes";
             // 
             // ribbonPanel22
@@ -567,6 +570,21 @@
             this.PanelMainView.Size = new System.Drawing.Size(1023, 275);
             this.PanelMainView.TabIndex = 2;
             // 
+            // ribbonPanel3
+            // 
+            this.ribbonPanel3.Items.Add(this.DebtsButton);
+            this.ribbonPanel3.Name = "ribbonPanel3";
+            this.ribbonPanel3.Text = "Morosos";
+            // 
+            // DebtsButton
+            // 
+            this.DebtsButton.Image = ((System.Drawing.Image)(resources.GetObject("DebtsButton.Image")));
+            this.DebtsButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("DebtsButton.LargeImage")));
+            this.DebtsButton.Name = "DebtsButton";
+            this.DebtsButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("DebtsButton.SmallImage")));
+            this.DebtsButton.Text = "";
+            this.DebtsButton.Click += new System.EventHandler(this.DebtsButton_Click);
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -647,5 +665,7 @@
         private System.Windows.Forms.RibbonButton ribbonButton3;
         private System.Windows.Forms.RibbonPanel ribbonPanel26;
         private System.Windows.Forms.RibbonButton ribbonButton4;
+        private System.Windows.Forms.RibbonPanel ribbonPanel3;
+        private System.Windows.Forms.RibbonButton DebtsButton;
     }
 }

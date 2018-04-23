@@ -203,5 +203,14 @@ namespace Horse.UserControls
                 checkPhone2.Checked = false;
             }
         }
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Enter)
+            {
+                btnSearch.PerformClick();
+                return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
     }
 }

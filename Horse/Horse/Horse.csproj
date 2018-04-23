@@ -149,6 +149,12 @@
     <Compile Include="UserControls\DailyBalance.Designer.cs">
       <DependentUpon>DailyBalance.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Debts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Debts.Designer.cs">
+      <DependentUpon>Debts.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\FoodPrice.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\Clients.resx">
       <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Debts.resx">
+      <DependentUpon>Debts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\NewClient.resx">
       <DependentUpon>NewClient.cs</DependentUpon>

@@ -302,5 +302,18 @@ namespace Horse
             else
                 UserControls.NewClient.Instance.BringToFront();
         }
+
+        private void DebtsButton_Click(object sender, EventArgs e)
+        {
+            if (!PanelMainView.Controls.Contains(UserControls.Debts.Instance))
+            {
+
+                PanelMainView.Controls.Add(UserControls.Debts.Instance);
+                UserControls.Debts.Instance.Dock = DockStyle.Fill;
+                UserControls.Debts.Instance.BringToFront();
+            }
+            else
+                UserControls.Debts.Instance.BringToFront();
+        }
     }
 }
