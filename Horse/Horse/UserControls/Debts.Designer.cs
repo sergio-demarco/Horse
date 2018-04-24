@@ -28,18 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Debts));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Debts));
             this.checkAllChecks = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkPhone2 = new System.Windows.Forms.CheckBox();
@@ -55,20 +48,14 @@
             this.checkNombre = new System.Windows.Forms.CheckBox();
             this.txtClients = new System.Windows.Forms.TextBox();
             this.dataClients = new System.Windows.Forms.DataGridView();
-            this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.Agregar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.DEBE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AFavor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cuit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.location = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.petname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.razonsoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataClients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -231,7 +218,7 @@
             this.txtClients.Location = new System.Drawing.Point(30, 22);
             this.txtClients.Multiline = true;
             this.txtClients.Name = "txtClients";
-            this.txtClients.Size = new System.Drawing.Size(1115, 35);
+            this.txtClients.Size = new System.Drawing.Size(1024, 35);
             this.txtClients.TabIndex = 18;
             // 
             // dataClients
@@ -240,164 +227,100 @@
             this.dataClients.AllowUserToDeleteRows = false;
             this.dataClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Editar,
-            this.id,
+            this.Agregar,
+            this.DEBE,
+            this.AFavor,
             this.name,
             this.lastname,
-            this.email,
-            this.cuit,
-            this.dni,
-            this.adress,
-            this.location,
-            this.petname,
-            this.razonsoc,
             this.phone,
             this.phone2});
             this.dataClients.Location = new System.Drawing.Point(30, 86);
             this.dataClients.Name = "dataClients";
             this.dataClients.ReadOnly = true;
-            this.dataClients.Size = new System.Drawing.Size(1257, 464);
+            this.dataClients.Size = new System.Drawing.Size(1122, 464);
             this.dataClients.TabIndex = 17;
-            // 
-            // Editar
-            // 
-            this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Editar.HeaderText = "";
-            this.Editar.Name = "Editar";
-            this.Editar.ReadOnly = true;
-            this.Editar.Text = "Editar";
-            this.Editar.UseColumnTextForButtonValue = true;
-            this.Editar.Width = 50;
-            // 
-            // id
-            // 
-            this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.id.DataPropertyName = "id";
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id.DefaultCellStyle = dataGridViewCellStyle1;
-            this.id.HeaderText = "ID";
-            this.id.MaxInputLength = 200;
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 43;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.name.DefaultCellStyle = dataGridViewCellStyle2;
-            this.name.HeaderText = "Nombre";
-            this.name.MaxInputLength = 200;
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // lastname
-            // 
-            this.lastname.DataPropertyName = "lastname";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.lastname.DefaultCellStyle = dataGridViewCellStyle3;
-            this.lastname.HeaderText = "Apellido";
-            this.lastname.MaxInputLength = 200;
-            this.lastname.Name = "lastname";
-            this.lastname.ReadOnly = true;
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "email";
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.email.DefaultCellStyle = dataGridViewCellStyle4;
-            this.email.HeaderText = "Email";
-            this.email.MaxInputLength = 200;
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            // 
-            // cuit
-            // 
-            this.cuit.DataPropertyName = "cuit";
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.cuit.DefaultCellStyle = dataGridViewCellStyle5;
-            this.cuit.HeaderText = "Cuit";
-            this.cuit.MaxInputLength = 200;
-            this.cuit.Name = "cuit";
-            this.cuit.ReadOnly = true;
-            // 
-            // dni
-            // 
-            this.dni.DataPropertyName = "dni";
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.dni.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dni.HeaderText = "DNI";
-            this.dni.MaxInputLength = 200;
-            this.dni.Name = "dni";
-            this.dni.ReadOnly = true;
-            // 
-            // adress
-            // 
-            this.adress.DataPropertyName = "adress";
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.adress.DefaultCellStyle = dataGridViewCellStyle7;
-            this.adress.HeaderText = "Domicilio";
-            this.adress.MaxInputLength = 200;
-            this.adress.Name = "adress";
-            this.adress.ReadOnly = true;
-            // 
-            // location
-            // 
-            this.location.DataPropertyName = "location";
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.location.DefaultCellStyle = dataGridViewCellStyle8;
-            this.location.HeaderText = "Localidad";
-            this.location.MaxInputLength = 200;
-            this.location.Name = "location";
-            this.location.ReadOnly = true;
-            // 
-            // petname
-            // 
-            this.petname.DataPropertyName = "petname";
-            this.petname.HeaderText = "Nombre Mascota";
-            this.petname.MaxInputLength = 200;
-            this.petname.Name = "petname";
-            this.petname.ReadOnly = true;
-            // 
-            // razonsoc
-            // 
-            this.razonsoc.DataPropertyName = "razonsoc";
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.razonsoc.DefaultCellStyle = dataGridViewCellStyle9;
-            this.razonsoc.HeaderText = "Razon Social";
-            this.razonsoc.MaxInputLength = 200;
-            this.razonsoc.Name = "razonsoc";
-            this.razonsoc.ReadOnly = true;
-            // 
-            // phone
-            // 
-            this.phone.DataPropertyName = "phone";
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.phone.DefaultCellStyle = dataGridViewCellStyle10;
-            this.phone.HeaderText = "Telefono";
-            this.phone.MaxInputLength = 200;
-            this.phone.Name = "phone";
-            this.phone.ReadOnly = true;
-            // 
-            // phone2
-            // 
-            this.phone2.DataPropertyName = "phone2";
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.phone2.DefaultCellStyle = dataGridViewCellStyle11;
-            this.phone2.HeaderText = "Telefono 2";
-            this.phone2.MaxInputLength = 200;
-            this.phone2.Name = "phone2";
-            this.phone2.ReadOnly = true;
             // 
             // btnSearch
             // 
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(1151, 22);
+            this.btnSearch.Location = new System.Drawing.Point(1091, 22);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(61, 54);
             this.btnSearch.TabIndex = 19;
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // Agregar
+            // 
+            this.Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Agregar.Frozen = true;
+            this.Agregar.HeaderText = "Agregar";
+            this.Agregar.Name = "Agregar";
+            this.Agregar.ReadOnly = true;
+            this.Agregar.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Agregar.Text = "Editar";
+            this.Agregar.UseColumnTextForButtonValue = true;
+            this.Agregar.Width = 75;
+            // 
+            // DEBE
+            // 
+            this.DEBE.Frozen = true;
+            this.DEBE.HeaderText = "DEBE";
+            this.DEBE.Name = "DEBE";
+            this.DEBE.ReadOnly = true;
+            this.DEBE.Width = 120;
+            // 
+            // AFavor
+            // 
+            this.AFavor.Frozen = true;
+            this.AFavor.HeaderText = "A Favor";
+            this.AFavor.Name = "AFavor";
+            this.AFavor.ReadOnly = true;
+            this.AFavor.Width = 120;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.name.DefaultCellStyle = dataGridViewCellStyle1;
+            this.name.HeaderText = "Nombre";
+            this.name.MaxInputLength = 200;
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 120;
+            // 
+            // lastname
+            // 
+            this.lastname.DataPropertyName = "lastname";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.lastname.DefaultCellStyle = dataGridViewCellStyle2;
+            this.lastname.HeaderText = "Apellido";
+            this.lastname.MaxInputLength = 200;
+            this.lastname.Name = "lastname";
+            this.lastname.ReadOnly = true;
+            this.lastname.Width = 120;
+            // 
+            // phone
+            // 
+            this.phone.DataPropertyName = "phone";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.phone.DefaultCellStyle = dataGridViewCellStyle3;
+            this.phone.HeaderText = "Telefono";
+            this.phone.MaxInputLength = 200;
+            this.phone.Name = "phone";
+            this.phone.ReadOnly = true;
+            this.phone.Width = 120;
+            // 
+            // phone2
+            // 
+            this.phone2.DataPropertyName = "phone2";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.phone2.DefaultCellStyle = dataGridViewCellStyle4;
+            this.phone2.HeaderText = "Telefono 2";
+            this.phone2.MaxInputLength = 200;
+            this.phone2.Name = "phone2";
+            this.phone2.ReadOnly = true;
+            this.phone2.Width = 120;
             // 
             // Debts
             // 
@@ -446,17 +369,11 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtClients;
         private System.Windows.Forms.DataGridView dataClients;
-        private System.Windows.Forms.DataGridViewButtonColumn Editar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewButtonColumn Agregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DEBE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AFavor;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cuit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dni;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn location;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn razonsoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn phone2;
     }

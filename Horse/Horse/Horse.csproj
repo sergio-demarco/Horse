@@ -75,6 +75,12 @@
     <Compile Include="Class\Connection.cs" />
     <Compile Include="Class\LoginController.cs" />
     <Compile Include="Class\MenuController.cs" />
+    <Compile Include="Forms\AddDebts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDebts.Designer.cs">
+      <DependentUpon>AddDebts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DialogOk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     <Compile Include="UserControls\VaccinePrice.Designer.cs">
       <DependentUpon>VaccinePrice.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AddDebts.resx">
+      <DependentUpon>AddDebts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DialogOk.resx">
       <DependentUpon>DialogOk.cs</DependentUpon>
     </EmbeddedResource>
