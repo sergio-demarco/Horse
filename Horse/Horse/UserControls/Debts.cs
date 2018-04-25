@@ -30,9 +30,10 @@ namespace Horse.UserControls
 
         private void Debts_Load(object sender, EventArgs e)
         {
+            dropOrderBy.SelectedItem= dropOrderBy.Items[0];
             //select d.indebt,d.infavor,c.name,c.lastname,c.phone,c.phone2 from clients c inner  join debts d on c.id=d.idCliente 
             //            string query = "select d.indebt,d.infavor,c.name,c.lastname,c.phone,c.phone2 from clients c inner  join debts d on c.id=d.idCliente  ";
-            string query = "select sum(d.indebt) as debe,sum(d.infavor) as afavor,c.name,c.lastname from clients c inner  join debts d on c.id=d.idCliente group by c.name,c.lastname order by debe desc";
+            string query = "select isnull(sum(d.indebt),'0') as indebt,isnull(sum(d.infavor),'0') as infavor,c.name,c.lastname,c.phone,c.phone2 from clients c left outer join debts d on c.id = d.idCliente group by c.name,c.lastname,c.phone,c.phone2 order by indebt desc";
             txtClients.Focus();
             Class.LoginController MyConnection = new Class.LoginController();
             SqlConnection connection = MyConnection.getConnection();
@@ -53,6 +54,32 @@ namespace Horse.UserControls
         private void btnSearch_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dropOrderBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var d = dropOrderBy.SelectedItem.ToString();
+            if (dropOrderBy.SelectedItem.ToString() == "Debe")
+            {
+                dataClients.Sort(dataClients.Columns[1], ListSortDirection.Descending);
+
+
+            }
+            else
+            {
+                dataClients.Sort(dataClients.Columns[2], ListSortDirection.Descending);
+            }
+            
+        }
+
+        private void dataClients_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (this.dataClients.Columns[e.ColumnIndex].Name.Equals("Agregar"))
+            {
+                DataGridViewRow row = this.dataClients.Rows[e.RowIndex];
+
+                
+            }
         }
     }
 }

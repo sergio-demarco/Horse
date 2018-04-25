@@ -45,3 +45,7 @@ C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.GenerateResourc
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.exe
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.pdb
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.ModifyClient.resources
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.AddDebts.resources
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.Debts.resources
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.CopyComplete
