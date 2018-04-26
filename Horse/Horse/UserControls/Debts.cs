@@ -78,7 +78,16 @@ namespace Horse.UserControls
             {
                 DataGridViewRow row = this.dataClients.Rows[e.RowIndex];
 
-                
+                string name = row.Cells[3].Value.ToString();
+                string lastname = row.Cells[4].Value.ToString();
+
+                Forms.AddDebts addDebts = new Forms.AddDebts(name,lastname);
+                addDebts.Show();
+
+                //Class.Clients cliente = new Class.Clients(id, name, lastname, email, cuit, dni, adress, location, petname, razonsoc, phone, phone2);
+
+                //Forms.ModifyClient modifyClient = new Forms.ModifyClient(cliente);
+                //modifyClient.Show();
             }
         }
     }

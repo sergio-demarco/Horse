@@ -50,56 +50,66 @@ namespace Horse.UserControls
         {
             if (txtApellido.Text != "" && txtCorreo.Text != "" && txtCuit.Text != "" && txtDni.Text != "" && txtDomicilio.Text != "" && txtLocalidad.Text != "" && txtNombre.Text != "" && txtNombreMascota.Text != "" && txtRazonSoc.Text != "" && txtTelefono.Text != "" && txtPhone2.Text != "")
             {
-                try
+                bool userExist = checkIfUserExist(txtNombre.Text, txtApellido.Text);
+                if (userExist)
                 {
-                    Class.LoginController MyConnection = new Class.LoginController();
-                    SqlConnection connection = MyConnection.getConnection();
-
-                    int count = 0;
-                    using (var command = new SqlCommand("InsertClient", connection))
+                    Color myColor = System.Drawing.Color.Red;
+                    Forms.DialogOk insertOk = new Forms.DialogOk("El cliente ya existe!", myColor);
+                    insertOk.Show();
+                    insertOk.BringToFront();
+                }
+                else
+                {
+                    try
                     {
-                        command.CommandType = System.Data.CommandType.StoredProcedure;
-                        command.Connection.Open();
-                        command.Parameters.AddWithValue("@name", txtNombre.Text);
-                        command.Parameters.AddWithValue("@lastname", txtApellido.Text);
-                        command.Parameters.AddWithValue("@email", txtCorreo.Text);
-                        command.Parameters.AddWithValue("@cuit", txtCuit.Text);
-                        command.Parameters.AddWithValue("@dni", txtDni.Text);
-                        command.Parameters.AddWithValue("@adress", txtDomicilio.Text);
-                        command.Parameters.AddWithValue("@location", txtLocalidad.Text);
-                        command.Parameters.AddWithValue("@petname", txtNombreMascota.Text);
-                        command.Parameters.AddWithValue("@razonsoc", txtRazonSoc.Text);
-                        command.Parameters.AddWithValue("@phone", txtTelefono.Text);
-                        command.Parameters.AddWithValue("@phone2", txtPhone2.Text);
+                        Class.LoginController MyConnection = new Class.LoginController();
+                        SqlConnection connection = MyConnection.getConnection();
 
-                        count = command.ExecuteNonQuery();
-                        if (count > 0)
+                        int count = 0;
+                        using (var command = new SqlCommand("InsertClient", connection))
                         {
-                            txtApellido.Text = "";
-                            txtCorreo.Text = "";
-                            txtCuit.Text = "NO POSEE";
-                            txtDni.Text = "";
-                            txtDomicilio.Text = "";
-                            txtLocalidad.Text = "";
-                            txtNombre.Text = "";
-                            txtNombreMascota.Text = "";
-                            txtRazonSoc.Text = "NO POSEE";
-                            txtTelefono.Text = "";
-                            txtPhone2.Text = "";
+                            command.CommandType = System.Data.CommandType.StoredProcedure;
+                            command.Connection.Open();
+                            command.Parameters.AddWithValue("@name", txtNombre.Text);
+                            command.Parameters.AddWithValue("@lastname", txtApellido.Text);
+                            command.Parameters.AddWithValue("@email", txtCorreo.Text);
+                            command.Parameters.AddWithValue("@cuit", txtCuit.Text);
+                            command.Parameters.AddWithValue("@dni", txtDni.Text);
+                            command.Parameters.AddWithValue("@adress", txtDomicilio.Text);
+                            command.Parameters.AddWithValue("@location", txtLocalidad.Text);
+                            command.Parameters.AddWithValue("@petname", txtNombreMascota.Text);
+                            command.Parameters.AddWithValue("@razonsoc", txtRazonSoc.Text);
+                            command.Parameters.AddWithValue("@phone", txtTelefono.Text);
+                            command.Parameters.AddWithValue("@phone2", txtPhone2.Text);
 
-                            Color myColor = System.Drawing.Color.Black;
-                            Forms.DialogOk insertOk = new Forms.DialogOk("Los datos fueron grabados con exito!", myColor);
-                            insertOk.Show();
-                            insertOk.BringToFront();
+                            count = command.ExecuteNonQuery();
+                            if (count > 0)
+                            {
+                                txtApellido.Text = "";
+                                txtCorreo.Text = "";
+                                txtCuit.Text = "NO POSEE";
+                                txtDni.Text = "";
+                                txtDomicilio.Text = "";
+                                txtLocalidad.Text = "";
+                                txtNombre.Text = "";
+                                txtNombreMascota.Text = "";
+                                txtRazonSoc.Text = "NO POSEE";
+                                txtTelefono.Text = "";
+                                txtPhone2.Text = "";
+
+                                Color myColor = System.Drawing.Color.Black;
+                                Forms.DialogOk insertOk = new Forms.DialogOk("Los datos fueron grabados con exito!", myColor);
+                                insertOk.Show();
+                                insertOk.BringToFront();
+                            }
                         }
+
                     }
-
+                    catch
+                    {
+                    }
                 }
-                catch
-                {
 
-
-                }
             }
             else
             {
@@ -107,6 +117,29 @@ namespace Horse.UserControls
                 Forms.DialogOk myDialog = new Forms.DialogOk("**Todos los campos deben ser completados**", myColor);
                 myDialog.Show();
                 myDialog.BringToFront();
+            }
+        }
+
+        private bool checkIfUserExist(string name, string lastname)
+        {
+            Class.LoginController MyConnection = new Class.LoginController();
+            SqlConnection connection = MyConnection.getConnection();
+
+            int count = 0;
+            using (var command = new SqlCommand("select id from clients where name='" + name + "' and lastname='" + lastname + "'", connection))
+            {
+                command.CommandType = System.Data.CommandType.Text;
+                command.Connection.Open();
+
+                count = command.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
         }
     }
