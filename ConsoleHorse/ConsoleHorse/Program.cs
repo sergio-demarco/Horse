@@ -22,7 +22,7 @@ namespace ConsoleHorse
         public void statusDataBase()
         {
             Program runApp = new Program();
-            int numberSQL = 9;
+            int numberSQL = 10;
             int partialSql = 0;
             try
             {
@@ -48,6 +48,8 @@ namespace ConsoleHorse
                                 + runApp.querySQL("CREATE TABLE Users (id int not null identity(1,1) primary key,username varchar(25),pass varchar (25),name varchar (30),lastname varchar(30),adress varchar (30),city varchar(30),country varchar (30),phone varchar(30),active bit,isAdmin bit);", "La tabla *Users* se creo correctamente!", "Error al generar la tabla *Users*")
                                 + runApp.querySQL("CREATE TABLE Clients (id int not null identity(1,1) primary key,name varchar(30),lastname varchar (30),email varchar(30),cuit varchar(30),dni varchar(30),adress varchar(30),location varchar (30),petname varchar(30),razonsoc varchar(30),phone varchar(30),phone2 varchar(30));", "La tabla *Clients* se creo correctamente!", "Error al generar la tabla *Clients*")
                                + runApp.querySQL("CREATE TABLE Debts (idCliente int,indebt decimal (25,2),infavor decimal (25,2), datedebts date)", "La tabla *Debts* se creo correctamente!", "Error al generar la tabla *Debts*")
+                               + runApp.querySQL("CREATE TABLE calendarVaccine (idCliente int,startDate date ,period int, dateFrom date, dateTo date)", "La tabla *calendarVaccine* se creo correctamente!", "Error al generar la tabla *calendarVaccine*")
+
                                //select contrato,sum(importe) as importe from tutabla group by contrato having count(*) > 1;
                                + runApp.querySQL("CREATE PROCEDURE LoginToHorse @username varchar(25), @pass varchar(25) AS SELECT username,pass FROM Users WHERE username = @username and pass=@pass and active=1 ", "El SP *LoginToHorse* se creo correctamente!", "Error al generar el SP *LoginToHorse*") 
                                 + runApp.querySQL("Insert into Users (username,pass,active,isAdmin) values('admin','admin',1,1);", "Se inserto *admin* a la base de datos correctamente!", "Error al insertar admin en la base de datos") 

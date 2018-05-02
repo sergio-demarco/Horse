@@ -19,6 +19,8 @@ namespace Horse
 
         private void MainView_Load(object sender, EventArgs e)
         {
+            //Services.EmailService myservice = new Services.EmailService();
+            //myservice.SendEmail();
             //boton salir tenia esto:
             //Login miLogin = new Login();
             //this.Hide();  // oculta el form inicial 

@@ -49,3 +49,5 @@ C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.AddDebts.resource
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.Debts.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.CopyComplete
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.CalendarClients.resources
+C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Clients.resources
