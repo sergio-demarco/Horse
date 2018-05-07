@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clients));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             this.checkAllChecks = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkPhone2 = new System.Windows.Forms.CheckBox();
@@ -55,7 +55,6 @@
             this.checkNombre = new System.Windows.Forms.CheckBox();
             this.txtClients = new System.Windows.Forms.TextBox();
             this.dataClients = new System.Windows.Forms.DataGridView();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +68,7 @@
             this.razonsoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataClients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -260,16 +260,6 @@
             this.dataClients.TabIndex = 17;
             this.dataClients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataClients_CellClick);
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(1133, 7);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(61, 54);
-            this.btnSearch.TabIndex = 19;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // Seleccionar
             // 
             this.Seleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -284,8 +274,8 @@
             // 
             this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.id.DataPropertyName = "id";
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id.DefaultCellStyle = dataGridViewCellStyle1;
             this.id.HeaderText = "ID";
             this.id.MaxInputLength = 200;
             this.id.Name = "id";
@@ -295,8 +285,8 @@
             // name
             // 
             this.name.DataPropertyName = "name";
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.name.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.name.DefaultCellStyle = dataGridViewCellStyle2;
             this.name.HeaderText = "Nombre";
             this.name.MaxInputLength = 200;
             this.name.Name = "name";
@@ -305,8 +295,8 @@
             // lastname
             // 
             this.lastname.DataPropertyName = "lastname";
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.lastname.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.lastname.DefaultCellStyle = dataGridViewCellStyle3;
             this.lastname.HeaderText = "Apellido";
             this.lastname.MaxInputLength = 200;
             this.lastname.Name = "lastname";
@@ -315,8 +305,8 @@
             // email
             // 
             this.email.DataPropertyName = "email";
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.email.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.email.DefaultCellStyle = dataGridViewCellStyle4;
             this.email.HeaderText = "Email";
             this.email.MaxInputLength = 200;
             this.email.Name = "email";
@@ -325,8 +315,8 @@
             // cuit
             // 
             this.cuit.DataPropertyName = "cuit";
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.cuit.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.cuit.DefaultCellStyle = dataGridViewCellStyle5;
             this.cuit.HeaderText = "Cuit";
             this.cuit.MaxInputLength = 200;
             this.cuit.Name = "cuit";
@@ -335,8 +325,8 @@
             // dni
             // 
             this.dni.DataPropertyName = "dni";
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.dni.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.dni.DefaultCellStyle = dataGridViewCellStyle6;
             this.dni.HeaderText = "DNI";
             this.dni.MaxInputLength = 200;
             this.dni.Name = "dni";
@@ -345,8 +335,8 @@
             // adress
             // 
             this.adress.DataPropertyName = "adress";
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.adress.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.adress.DefaultCellStyle = dataGridViewCellStyle7;
             this.adress.HeaderText = "Domicilio";
             this.adress.MaxInputLength = 200;
             this.adress.Name = "adress";
@@ -355,8 +345,8 @@
             // location
             // 
             this.location.DataPropertyName = "location";
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.location.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.location.DefaultCellStyle = dataGridViewCellStyle8;
             this.location.HeaderText = "Localidad";
             this.location.MaxInputLength = 200;
             this.location.Name = "location";
@@ -373,8 +363,8 @@
             // razonsoc
             // 
             this.razonsoc.DataPropertyName = "razonsoc";
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.razonsoc.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.razonsoc.DefaultCellStyle = dataGridViewCellStyle9;
             this.razonsoc.HeaderText = "Razon Social";
             this.razonsoc.MaxInputLength = 200;
             this.razonsoc.Name = "razonsoc";
@@ -383,8 +373,8 @@
             // phone
             // 
             this.phone.DataPropertyName = "phone";
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.phone.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.phone.DefaultCellStyle = dataGridViewCellStyle10;
             this.phone.HeaderText = "Telefono";
             this.phone.MaxInputLength = 200;
             this.phone.Name = "phone";
@@ -393,12 +383,22 @@
             // phone2
             // 
             this.phone2.DataPropertyName = "phone2";
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.phone2.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.phone2.DefaultCellStyle = dataGridViewCellStyle11;
             this.phone2.HeaderText = "Telefono 2";
             this.phone2.MaxInputLength = 200;
             this.phone2.Name = "phone2";
             this.phone2.ReadOnly = true;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(1133, 7);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(61, 54);
+            this.btnSearch.TabIndex = 19;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // Clients
             // 
@@ -421,7 +421,9 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtClients);
             this.Controls.Add(this.dataClients);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Clients";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clients";
             this.Load += new System.EventHandler(this.Clients_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataClients)).EndInit();

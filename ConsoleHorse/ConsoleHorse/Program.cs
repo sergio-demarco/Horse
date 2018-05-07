@@ -22,7 +22,7 @@ namespace ConsoleHorse
         public void statusDataBase()
         {
             Program runApp = new Program();
-            int numberSQL = 10;
+            int numberSQL = 11;
             int partialSql = 0;
             try
             {
@@ -56,7 +56,8 @@ namespace ConsoleHorse
                                 + runApp.querySQL("insert into users (username,pass,active,isAdmin) values ('horse','horse',1,1)", "Se inserto *horse* a la base de datos correctamente!", "Error al insertar horse en la base de datos")
                                 + runApp.querySQL("CREATE PROCEDURE [dbo].[IsAdmin] @username varchar(25), @pass varchar(25) AS BEGIN SELECT isAdmin FROM Users WHERE username = @username and pass=@pass END", "El SP *IsAdmin* se creo correctamente!", "Error al generar el SP *IsAdmin* en de datos") 
                                 + runApp.querySQL("CREATE PROCEDURE [dbo].[ResetPassword]    @username varchar(25), @pass varchar(25)  AS BEGIN update Users set pass=@pass where username = @username END", "El SP *ResetPassword* se creo correctamente!", "Error al generar el SP *ResetPassword* en de datos")
-                                + runApp.querySQL("CREATE PROCEDURE InsertClient @name varchar(30),@lastname varchar(30),@email varchar(30),@cuit varchar(30),@dni varchar(30),@adress varchar(30),@location varchar(30),@petname varchar(30),@razonsoc varchar(30),@phone varchar(30) AS BEGIN INSERT INTO Clients(name, lastname, email, cuit, dni, adress, location, petname, razonsoc, phone) VALUES (@name,@lastname,@email,@cuit,@dni,@adress,@location,@petname,@razonsoc,@phone) END", "El SP *InsertClient* se creo correctamente!", "Error al generar el SP *InsertClient* en de datos"); 
+                                + runApp.querySQL("CREATE PROCEDURE InsertClient @name varchar(30),@lastname varchar(30),@email varchar(30),@cuit varchar(30),@dni varchar(30),@adress varchar(30),@location varchar(30),@petname varchar(30),@razonsoc varchar(30),@phone varchar(30) AS BEGIN INSERT INTO Clients(name, lastname, email, cuit, dni, adress, location, petname, razonsoc, phone) VALUES (@name,@lastname,@email,@cuit,@dni,@adress,@location,@petname,@razonsoc,@phone) END", "El SP *InsertClient* se creo correctamente!", "Error al generar el SP *InsertClient* en de datos")
+                            +runApp.querySQL("CREATE PROCEDURE InsertCalendarVacine @idClient int, @startDate date,@period int, @dateFrom date, @dateTo date AS BEGIN INSERT INTO calendarVaccine ([idCliente],[startDate],[period],[dateFrom],[dateTo]) VALUES (@idClient,@startDate,@period,@dateFrom,@dateTo) END", "El SP *InsertCalendarVacine* se creo correctamente!", "Error al generar el SP *InsertCalendarVacine* en de datos"); 
                             if (partialSql== numberSQL)
                             {
                                 Console.WriteLine("LA BASE DE DATOS SE CARGO CORRECTAMENTE!");

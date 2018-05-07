@@ -44,15 +44,26 @@ namespace Horse
 
         private void CalendarButton_Click(object sender, EventArgs e)
         {
-            if (!PanelMainView.Controls.Contains(UserControls.CalendarClients.Instance))
+            foreach (Form frm in Application.OpenForms)
             {
-
-                PanelMainView.Controls.Add(UserControls.CalendarClients.Instance);
-                UserControls.CalendarClients.Instance.Dock = DockStyle.Fill;
-                UserControls.CalendarClients.Instance.BringToFront();
+                if (frm.GetType() == typeof(Forms.Calendar))
+                {
+                    frm.Hide();
+                }
             }
-            else
-                UserControls.CalendarClients.Instance.BringToFront();
+
+            Forms.Calendar myCalendar = new Forms.Calendar();
+            myCalendar.Show();
+            myCalendar.BringToFront();
+            //if (!PanelMainView.Controls.Contains(UserControls.CalendarClients.Instance))
+            //{
+
+            //    PanelMainView.Controls.Add(UserControls.CalendarClients.Instance);
+            //    UserControls.CalendarClients.Instance.Dock = DockStyle.Fill;
+            //    UserControls.CalendarClients.Instance.BringToFront();
+            //}
+            //else
+            //    UserControls.CalendarClients.Instance.BringToFront();
 
         }
 

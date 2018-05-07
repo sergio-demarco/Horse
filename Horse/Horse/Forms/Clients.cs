@@ -13,11 +13,9 @@ namespace Horse.Forms
 {
     public partial class Clients : Form
     {
-        private int myForm;
-        public Clients(int form)
+        public Clients()
         {
             InitializeComponent();
-            myForm = form;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -65,13 +63,11 @@ namespace Horse.Forms
 
                 Class.Clients cliente = new Class.Clients(id, name, lastname, email, cuit, dni, adress, location, petname, razonsoc, phone, phone2);
 
-                if (myForm == 1)
-                {
-                    UserControls.CalendarClients modifyClient = new UserControls.CalendarClients(cliente.Name.ToString()) ;
-                   
-
+                Forms.Calendar calendar = new Forms.Calendar(cliente);
+                calendar.Show();
+                calendar.BringToFront();
                     this.Hide();
-                }
+                
 
             }
         }

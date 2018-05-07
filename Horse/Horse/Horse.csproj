@@ -81,6 +81,12 @@
     <Compile Include="Forms\AddDebts.Designer.cs">
       <DependentUpon>AddDebts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Clients.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,7 +125,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\EmailService.cs" />
     <Compile Include="UserControls\AccesoryPrice.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,12 +136,6 @@
     </Compile>
     <Compile Include="UserControls\AllPrice.Designer.cs">
       <DependentUpon>AllPrice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\CalendarClients.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\CalendarClients.Designer.cs">
-      <DependentUpon>CalendarClients.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ClientAccount.cs">
       <SubType>UserControl</SubType>
@@ -255,6 +254,9 @@
     <EmbeddedResource Include="Forms\AddDebts.resx">
       <DependentUpon>AddDebts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clients.resx">
       <DependentUpon>Clients.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,9 +285,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControls\CalendarClients.resx">
-      <DependentUpon>CalendarClients.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Clients.resx">
       <DependentUpon>Clients.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,13 +312,6 @@
   <ItemGroup>
     <Content Include="HorseLogo.ico" />
     <Content Include="Images\HorseLogo.ico" />
-    <Content Include="Services\HTMLPage1.html" />
-    <Content Include="Services\images\fb.gif" />
-    <Content Include="Services\images\h1.jpg" />
-    <Content Include="Services\images\left.gif" />
-    <Content Include="Services\images\perro_comida.jpg" />
-    <Content Include="Services\images\right.gif" />
-    <Content Include="Services\images\tw.gif" />
     <None Include="Resources\HorseLogo2.jpg" />
     <None Include="Resources\HorseLogo.ico" />
     <None Include="Resources\menu.png" />

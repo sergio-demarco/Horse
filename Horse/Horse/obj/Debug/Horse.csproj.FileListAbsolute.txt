@@ -33,9 +33,6 @@ C:\Users\sergio\Desktop\Horse\Horse\Horse\bin\Debug\System.Windows.Forms.Ribbon.
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.DialogOk.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.ModifyClient.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.MyPass.resources
-C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.NewDocument.resources
-C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Password.resources
-C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Permision.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Login.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.MainView.resources
 C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Properties.Resources.resources
@@ -51,3 +48,8 @@ C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.CoreCompileInput
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csproj.CopyComplete
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.CalendarClients.resources
 C:\Users\Admin\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Clients.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.csprojResolveAssemblyReference.cache
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.AddDebts.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Calendar.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.Forms.Clients.resources
+C:\Users\sergio\Desktop\Horse\Horse\Horse\obj\Debug\Horse.UserControls.Debts.resources
